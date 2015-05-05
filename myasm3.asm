@@ -1,0 +1,5 @@
+MOV A, #3H
+MOV R1, #2H
+MOV @R1, A
+MOV A, #6H
+SUB A, @R1

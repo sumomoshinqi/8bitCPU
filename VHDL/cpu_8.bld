@@ -1,0 +1,230 @@
+Release 5.1i - ngdbuild F.23
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -quiet -dd d:\tmp\vhdl/_ngo -uc ../8bitCPU.ucf
+-insert_keep_hierarchy -p xc2s150-pq208-6 cpu_8.ngc cpu_8.ngd 
+
+Reading NGO file "D:/tmp/VHDL/cpu_8.ngc" ...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "../8bitCPU.ucf" ...
+INFO:NgdBuild:738 - A case sensitive search for the INST, PAD, or NET element
+   referred to by a constraint entry in '../8bitCPU.ucf' that accompanies this
+   design has failed, while a case insensitive search is in progress. The result
+   of the case insensitive search will be used, but messages will accompany each
+   and every use of a case insensitive result. Constraints are case sensitive
+   with respect to user-specified identifiers, which includes names of logic
+   elements in a design.
+INFO:NgdBuild:740 - Line 11 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'DB<7>'. NET is 'db<7>'.
+INFO:NgdBuild:740 - Line 12 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'DB<6>'. NET is 'db<6>'.
+INFO:NgdBuild:740 - Line 13 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'DB<5>'. NET is 'db<5>'.
+INFO:NgdBuild:740 - Line 14 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'DB<4>'. NET is 'db<4>'.
+INFO:NgdBuild:740 - Line 15 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'DB<3>'. NET is 'db<3>'.
+INFO:NgdBuild:740 - Line 16 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'DB<2>'. NET is 'db<2>'.
+INFO:NgdBuild:740 - Line 17 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'DB<1>'. NET is 'db<1>'.
+INFO:NgdBuild:740 - Line 18 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'DB<0>'. NET is 'db<0>'.
+INFO:NgdBuild:740 - Line 19 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<15>'. NET is 'ab<15>'.
+INFO:NgdBuild:740 - Line 20 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<14>'. NET is 'ab<14>'.
+INFO:NgdBuild:740 - Line 21 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<13>'. NET is 'ab<13>'.
+INFO:NgdBuild:740 - Line 22 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<12>'. NET is 'ab<12>'.
+INFO:NgdBuild:740 - Line 23 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<11>'. NET is 'ab<11>'.
+INFO:NgdBuild:740 - Line 24 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<10>'. NET is 'ab<10>'.
+INFO:NgdBuild:740 - Line 25 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<9>'. NET is 'ab<9>'.
+INFO:NgdBuild:740 - Line 26 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<8>'. NET is 'ab<8>'.
+INFO:NgdBuild:740 - Line 27 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<7>'. NET is 'ab<7>'.
+INFO:NgdBuild:740 - Line 28 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<6>'. NET is 'ab<6>'.
+INFO:NgdBuild:740 - Line 29 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<5>'. NET is 'ab<5>'.
+INFO:NgdBuild:740 - Line 30 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<4>'. NET is 'ab<4>'.
+INFO:NgdBuild:740 - Line 31 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<3>'. NET is 'ab<3>'.
+INFO:NgdBuild:740 - Line 32 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<2>'. NET is 'ab<2>'.
+INFO:NgdBuild:740 - Line 33 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<1>'. NET is 'ab<1>'.
+INFO:NgdBuild:740 - Line 34 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'AB<0>'. NET is 'ab<0>'.
+INFO:NgdBuild:740 - Line 35 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'MUX<0>'. NET is 'mux<0>'.
+INFO:NgdBuild:740 - Line 36 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'MUX<1>'. NET is 'mux<1>'.
+INFO:NgdBuild:740 - Line 37 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'MUX<2>'. NET is 'mux<2>'.
+INFO:NgdBuild:740 - Line 40 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<29>'. NET is 'co<29>'.
+INFO:NgdBuild:740 - Line 41 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<28>'. NET is 'co<28>'.
+INFO:NgdBuild:740 - Line 42 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<27>'. NET is 'co<27>'.
+INFO:NgdBuild:740 - Line 43 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<26>'. NET is 'co<26>'.
+INFO:NgdBuild:740 - Line 44 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<25>'. NET is 'co<25>'.
+INFO:NgdBuild:740 - Line 45 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<24>'. NET is 'co<24>'.
+INFO:NgdBuild:740 - Line 46 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<23>'. NET is 'co<23>'.
+INFO:NgdBuild:740 - Line 47 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<22>'. NET is 'co<22>'.
+INFO:NgdBuild:740 - Line 48 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<21>'. NET is 'co<21>'.
+INFO:NgdBuild:740 - Line 49 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<20>'. NET is 'co<20>'.
+INFO:NgdBuild:740 - Line 50 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<19>'. NET is 'co<19>'.
+INFO:NgdBuild:740 - Line 51 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<18>'. NET is 'co<18>'.
+INFO:NgdBuild:740 - Line 52 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<17>'. NET is 'co<17>'.
+INFO:NgdBuild:740 - Line 53 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<16>'. NET is 'co<16>'.
+INFO:NgdBuild:740 - Line 54 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<15>'. NET is 'co<15>'.
+INFO:NgdBuild:740 - Line 55 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<14>'. NET is 'co<14>'.
+INFO:NgdBuild:740 - Line 56 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<13>'. NET is 'co<13>'.
+INFO:NgdBuild:740 - Line 57 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<12>'. NET is 'co<12>'.
+INFO:NgdBuild:740 - Line 58 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<11>'. NET is 'co<11>'.
+INFO:NgdBuild:740 - Line 59 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<10>'. NET is 'co<10>'.
+INFO:NgdBuild:740 - Line 60 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<9>'. NET is 'co<9>'.
+INFO:NgdBuild:740 - Line 61 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<8>'. NET is 'co<8>'.
+INFO:NgdBuild:740 - Line 62 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<7>'. NET is 'co<7>'.
+INFO:NgdBuild:740 - Line 63 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<6>'. NET is 'co<6>'.
+INFO:NgdBuild:740 - Line 64 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<5>'. NET is 'co<5>'.
+INFO:NgdBuild:740 - Line 65 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<4>'. NET is 'co<4>'.
+INFO:NgdBuild:740 - Line 66 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<3>'. NET is 'co<3>'.
+INFO:NgdBuild:740 - Line 67 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<2>'. NET is 'co<2>'.
+INFO:NgdBuild:740 - Line 68 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<1>'. NET is 'co<1>'.
+INFO:NgdBuild:740 - Line 69 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CO<0>'. NET is 'co<0>'.
+INFO:NgdBuild:740 - Line 71 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<31>'. NET is 'ci<31>'.
+INFO:NgdBuild:740 - Line 72 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<30>'. NET is 'ci<30>'.
+INFO:NgdBuild:740 - Line 73 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<29>'. NET is 'ci<29>'.
+INFO:NgdBuild:740 - Line 74 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<28>'. NET is 'ci<28>'.
+INFO:NgdBuild:740 - Line 75 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<27>'. NET is 'ci<27>'.
+INFO:NgdBuild:740 - Line 76 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<26>'. NET is 'ci<26>'.
+INFO:NgdBuild:740 - Line 77 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<25>'. NET is 'ci<25>'.
+INFO:NgdBuild:740 - Line 78 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<24>'. NET is 'ci<24>'.
+INFO:NgdBuild:740 - Line 79 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<23>'. NET is 'ci<23>'.
+INFO:NgdBuild:740 - Line 80 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<22>'. NET is 'ci<22>'.
+INFO:NgdBuild:740 - Line 81 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<21>'. NET is 'ci<21>'.
+INFO:NgdBuild:740 - Line 82 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<20>'. NET is 'ci<20>'.
+INFO:NgdBuild:740 - Line 83 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<19>'. NET is 'ci<19>'.
+INFO:NgdBuild:740 - Line 84 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<18>'. NET is 'ci<18>'.
+INFO:NgdBuild:740 - Line 85 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<17>'. NET is 'ci<17>'.
+INFO:NgdBuild:740 - Line 86 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<16>'. NET is 'ci<16>'.
+INFO:NgdBuild:740 - Line 87 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<15>'. NET is 'ci<15>'.
+INFO:NgdBuild:740 - Line 88 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<14>'. NET is 'ci<14>'.
+INFO:NgdBuild:740 - Line 89 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<13>'. NET is 'ci<13>'.
+INFO:NgdBuild:740 - Line 90 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<12>'. NET is 'ci<12>'.
+INFO:NgdBuild:740 - Line 91 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<11>'. NET is 'ci<11>'.
+INFO:NgdBuild:740 - Line 92 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<10>'. NET is 'ci<10>'.
+INFO:NgdBuild:740 - Line 93 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<9>'. NET is 'ci<9>'.
+INFO:NgdBuild:740 - Line 94 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<8>'. NET is 'ci<8>'.
+INFO:NgdBuild:740 - Line 95 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<7>'. NET is 'ci<7>'.
+INFO:NgdBuild:740 - Line 96 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<6>'. NET is 'ci<6>'.
+INFO:NgdBuild:740 - Line 97 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<5>'. NET is 'ci<5>'.
+INFO:NgdBuild:740 - Line 98 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<4>'. NET is 'ci<4>'.
+INFO:NgdBuild:740 - Line 99 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<3>'. NET is 'ci<3>'.
+INFO:NgdBuild:740 - Line 100 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<2>'. NET is 'ci<2>'.
+INFO:NgdBuild:740 - Line 101 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<1>'. NET is 'ci<1>'.
+INFO:NgdBuild:740 - Line 102 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CI<0>'. NET is 'ci<0>'.
+INFO:NgdBuild:740 - Line 103 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'MCLK'. NET is 'mclk'.
+INFO:NgdBuild:740 - Line 104 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'MRD'. NET is 'mrd'.
+INFO:NgdBuild:740 - Line 105 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'IOW'. NET is 'iow'.
+INFO:NgdBuild:740 - Line 106 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'IOR'. NET is 'ior'.
+INFO:NgdBuild:740 - Line 111 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'MWR'. NET is 'mwr'.
+INFO:NgdBuild:740 - Line 112 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'CLK'. NET is 'clk'.
+INFO:NgdBuild:740 - Line 114 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'RUN'. NET is 'run'.
+INFO:NgdBuild:740 - Line 115 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'RESET'. NET is 'reset'.
+INFO:NgdBuild:740 - Line 116 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'PRIX'. NET is 'prix'.
+INFO:NgdBuild:740 - Line 117 in '../8bitCPU.ucf': Found case insensitive match
+   for NET name 'KRIX'. NET is 'krix'.
+
+Checking timing specifications ...
+Checking expanded design ...
+WARNING:NgdBuild:479 - The input pad net 'clk' is driving one or more clock
+   loads that should only use a dedicated clock buffer. This could result in
+   large clock skews on this net. Check whether the correct type of BUF is being
+   used to drive the clock buffer.
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Writing NGD file "cpu_8.ngd" ...
+
+Writing NGDBUILD log file "cpu_8.bld"...

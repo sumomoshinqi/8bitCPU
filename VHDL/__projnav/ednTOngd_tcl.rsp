@@ -1,0 +1,2 @@
+set ADucfFile {../8bitCPU.ucf}
+set AD {}

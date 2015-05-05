@@ -1,0 +1,687 @@
+Release 5.1i - xst F.23
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.23 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.23 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: cpu_8.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Low Level Synthesis
+  6) Final Report
+     6.1) Device utilization summary
+     6.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : cpu_8.prj
+Input Format                       : VHDL
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : cpu_8
+Output Format                      : NGC
+Target Device                      : xc2s150-6pq208
+
+---- Source Options
+Entity Name                        : cpu_8
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100
+Add Generic Clock Buffer(BUFG)     : 0
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : lower
+Top module area constraint         : 100
+Top module allowed area overflow   : 5
+
+---- Other Options
+read_cores                         : YES
+cross_clock_analysis               : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file D:/tmp/VHDL/../8bitCPU.vhd in Library work.
+Architecture cpu_8_behave of Entity cpu_8 is up to date.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+
+Analyzing Entity <cpu_8> (Architecture <cpu_8_behave>).
+WARNING:Xst:819 - D:/tmp/VHDL/../8bitCPU.vhd line 271: The following signals are missing in the process sensitivity list:
+   ff<7>, ff<6>, ff<5>, ff<4>, ff<3>, ff<2>, ff<1>, ff<0>, pc<15>, pc<14>, pc<13>, pc<12>, pc<11>, pc<10>, pc<9>, pc<8>, pc<7>, pc<6>, pc<5>, pc<4>, pc<3>, pc<2>, pc<1>, pc<0>, rout.
+Entity <cpu_8> analyzed. Unit <cpu_8> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <cpu_8>.
+    Related source file is D:/tmp/VHDL/../8bitCPU.vhd.
+WARNING:Xst:646 - Signal <mir<31>> is assigned but never used.
+WARNING:Xst:646 - Signal <mir<30>> is assigned but never used.
+WARNING:Xst:737 - Found 16-bit latch for signal <ab>.
+WARNING:Xst:737 - Found 1-bit latch for signal <pcadd>.
+    Found 8-bit tristate buffer for signal <db>.
+    Found 1-bit register for signal <mclk>.
+    Found 8-bit 4-to-1 multiplexer for signal <$n0023> created at line 275.
+    Found 16-bit 3-to-1 multiplexer for signal <$n0025>.
+    Found 1-bit 4-to-1 multiplexer for signal <$n0033>.
+    Found 1-bit 4-to-1 multiplexer for signal <$n0034>.
+    Found 1-bit 4-to-1 multiplexer for signal <$n0035>.
+    Found 1-bit 4-to-1 multiplexer for signal <$n0036>.
+    Found 1-bit 4-to-1 multiplexer for signal <$n0037>.
+    Found 9-bit addsub for signal <$n0066>.
+    Found 16-bit addsub for signal <$n0074>.
+    Found 8-bit register for signal <a>.
+    Found 8-bit register for signal <act>.
+    Found 8-bit register for signal <adrh>.
+    Found 8-bit register for signal <adrl>.
+    Found 1-bit register for signal <cy>.
+    Found 1-bit register for signal <cya>.
+    Found 8-bit register for signal <ir>.
+    Found 1-bit register for signal <mclr>.
+    Found 30-bit register for signal <mir<29:0>>.
+    Found 10-bit up counter for signal <mpc>.
+    Found 16-bit up counter for signal <pc>.
+    Found 8-bit register for signal <r0>.
+    Found 8-bit register for signal <r1>.
+    Found 8-bit register for signal <r2>.
+    Found 8-bit register for signal <r3>.
+    Found 8-bit register for signal <r4>.
+    Found 8-bit register for signal <r5>.
+    Found 8-bit register for signal <r6>.
+    Found 8-bit register for signal <r7>.
+    Found 8-bit 8-to-1 multiplexer for signal <rout>.
+    Found 16-bit register for signal <sp>.
+    Found 8-bit register for signal <tmp>.
+    Found 1-bit register for signal <zy>.
+    Found 103 1-bit 2-to-1 multiplexers.
+WARNING:Xst:647 - Input <co<31>> is never used.
+WARNING:Xst:647 - Input <co<30>> is never used.
+WARNING:Xst:1306 - Output <ctrl1> is never assigned.
+WARNING:Xst:1306 - Output <ctrl2> is never assigned.
+WARNING:Xst:1306 - Output <ctrl3> is never assigned.
+WARNING:Xst:1306 - Output <ctrl4> is never assigned.
+    Summary:
+	inferred   2 Counter(s).
+	inferred 155 D-type flip-flop(s).
+	inferred   2 Adder/Subtracter(s).
+	inferred  37 Multiplexer(s).
+	inferred   8 Tristate(s).
+Unit <cpu_8> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 50
+  1-bit register                   : 35
+  8-bit register                   : 14
+  16-bit register                  : 1
+# Latches                          : 2
+  16-bit latch                     : 1
+  1-bit latch                      : 1
+# Counters                         : 2
+  10-bit up counter                : 1
+  16-bit up counter                : 1
+# Multiplexers                     : 40
+  2-to-1 multiplexer               : 16
+  16-bit 3-to-1 multiplexer        : 1
+  1-bit 4-to-1 multiplexer         : 5
+  8-bit 4-to-1 multiplexer         : 1
+  1-bit 8-to-1 multiplexer         : 16
+  8-bit 8-to-1 multiplexer         : 1
+# Tristates                        : 1
+  8-bit tristate buffer            : 1
+# Adders/Subtractors               : 2
+  9-bit addsub                     : 1
+  16-bit addsub                    : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Library "C:/Xilinx/data/librtl.xst" Consulted
+WARNING:Xst:1290 - Hierarchical block <I0> is unconnected in block <Mmux_fb>.
+   It will be removed from the design.
+
+Optimizing unit <cpu_8> ...
+
+Mapping all equations...
+Loading device for application Xst from file 'v150.nph' in environment C:/Xilinx.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cpu_8, actual ratio is 12.
+FlipFlop mclk has been replicated 1 time(s)
+FlipFlop mir_9 has been replicated 8 time(s) to handle iob=true attribute.
+Latch ab_15_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_14_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_13_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_12_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_11_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_10_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_9_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_8_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_7_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_6_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_5_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_4_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_3_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_2_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_1_0 has been replicated 1 time(s) to handle iob=true attribute.
+Latch ab_0_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Output File Name               : cpu_8.ngr
+Top Level Output File Name         : cpu_8
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Keep Hierarchy                     : NO
+Macro Generator                    : macro+
+
+Design Statistics
+# IOs                              : 105
+
+Macro Statistics :
+# Registers                        : 57
+#      1-bit register              : 43
+#      16-bit register             : 1
+#      8-bit register              : 13
+# Counters                         : 2
+#      10-bit up counter           : 1
+#      16-bit up counter           : 1
+# Multiplexers                     : 23
+#      1-bit 4-to-1 multiplexer    : 5
+#      1-bit 8-to-1 multiplexer    : 16
+#      8-bit 4-to-1 multiplexer    : 1
+#      8-bit 8-to-1 multiplexer    : 1
+# Tristates                        : 1
+#      8-bit tristate buffer       : 1
+# Adders/Subtractors               : 2
+#      16-bit addsub               : 1
+#      9-bit addsub                : 1
+
+Cell Usage :
+# BELS                             : 567
+#      GND                         : 1
+#      LUT1                        : 15
+#      LUT2                        : 7
+#      LUT2_L                      : 1
+#      LUT3                        : 235
+#      LUT3_D                      : 5
+#      LUT3_L                      : 33
+#      LUT4                        : 70
+#      LUT4_D                      : 1
+#      LUT4_L                      : 14
+#      MUXCY                       : 48
+#      MUXF5                       : 62
+#      MUXF6                       : 24
+#      VCC                         : 1
+#      XORCY                       : 50
+# FlipFlops/Latches                : 231
+#      FD                          : 38
+#      FD_1                        : 16
+#      FDC                         : 1
+#      FDC_1                       : 2
+#      FDCPE                       : 10
+#      FDCPE_1                     : 16
+#      FDE_1                       : 107
+#      FDRE_1                      : 2
+#      FDSE_1                      : 6
+#      LD                          : 33
+# IO Buffers                       : 99
+#      IBUF                        : 38
+#      IOBUF                       : 8
+#      OBUF                        : 53
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2s150pq208-6 
+
+ Number of Slices:                     216  out of   1728    12%  
+ Number of Slice Flip Flops:           231  out of   3456     6%  
+ Number of 4 input LUTs:               381  out of   3456    11%  
+ Number of bonded IOBs:                 99  out of    144    68%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | IBUF                   | 2     |
+mclk:q                             | NONE                   | 70    |
+mick1:o                            | NONE(*)(mir_10)        | 38    |
+mclk_1:q                           | NONE                   | 78    |
+ab_10__n00011:o                    | NONE(*)(ab_11_0_1)     | 32    |
+mpck1:o                            | NONE(*)(mpc_7)         | 10    |
+pcadd__n00011:o                    | NONE(*)(pcadd_0)       | 1     |
+-----------------------------------+------------------------+-------+
+(*) These 4 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Timing Summary:
+---------------
+Speed Grade: -6
+
+   Minimum period: 13.850ns (Maximum Frequency: 72.202MHz)
+   Minimum input arrival time before clock: 5.875ns
+   Maximum output required time after clock: 20.204ns
+   Maximum combinational path delay: 14.107ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'clk'
+Delay:               7.833ns (Levels of Logic = 1)
+  Source:            mclk
+  Destination:       mclk
+  Source Clock:      clk falling
+  Destination Clock: clk falling
+
+  Data Path: mclk to mclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:c->q           78   1.085   5.490  mclk (mclk_obuf)
+     LUT1:i0->o            2   0.549   0.000  _n01011 (_n0101)
+     FDC_1:d                   0.709          mclk
+    ----------------------------------------
+    Total                      7.833ns (2.343ns logic, 5.490ns route)
+                                       (29.9% logic, 70.1% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'mclk:q'
+Delay:               13.831ns (Levels of Logic = 14)
+  Source:            ir_0
+  Destination:       cy
+  Source Clock:      mclk:q falling
+  Destination Clock: mclk:q falling
+
+  Data Path: ir_0 to cy
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:c->q           41   1.085   3.825  ir_0 (ir_0)
+     LUT3_L:I0->LO         1   0.549   0.000  mmux_rout_inst_lut3_1071 (mmux_rout__net165)
+     MUXF5:i0->o           1   0.315   0.000  mmux_rout_inst_mux_f5_49 (mmux_rout__net167)
+     MUXF6:i0->o           2   0.316   1.206  mmux_rout_inst_mux_f6_18 (_n0218<26>)
+     LUT3:i1->o            2   0.549   1.206  mmux_fb_i6_result1 (fb<2>)
+     LUT4_L:I2->LO         1   0.549   0.000  maddsub__n0066_inst_lut3_21 (maddsub__n0066_inst_lut3_2)
+     MUXCY:s->o            1   0.659   0.000  maddsub__n0066_inst_cy_18 (maddsub__n0066_inst_cy_18)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_19 (maddsub__n0066_inst_cy_19)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_20 (maddsub__n0066_inst_cy_20)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_21 (maddsub__n0066_inst_cy_21)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_22 (maddsub__n0066_inst_cy_22)
+     MUXCY:ci->o           0   0.042   0.000  maddsub__n0066_inst_cy_23 (maddsub__n0066_inst_cy_23)
+     XORCY:ci->o           1   0.420   1.035  maddsub__n0066_inst_sum_24 (_n0066<8>)
+     LUT4_D:I3->LO         1   0.549   0.100  ff<8>1 (N15650)
+     LUT3_L:I1->LO         1   0.549   0.000  mmux_cyd_result1 (cyd)
+     FDE_1:d                   0.709          cy
+    ----------------------------------------
+    Total                     13.831ns (6.459ns logic, 7.372ns route)
+                                       (46.7% logic, 53.3% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'mclk_1:q'
+Delay:               13.850ns (Levels of Logic = 11)
+  Source:            r2_2
+  Destination:       zy
+  Source Clock:      mclk_1:q falling
+  Destination Clock: mclk_1:q falling
+
+  Data Path: r2_2 to zy
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:c->q            3   1.085   1.332  r2_2 (r2_2)
+     LUT3_L:I1->LO         1   0.549   0.000  mmux_rout_inst_lut3_1081 (mmux_rout__net166)
+     MUXF5:i1->o           1   0.305   0.000  mmux_rout_inst_mux_f5_49 (mmux_rout__net167)
+     MUXF6:i0->o           2   0.316   1.206  mmux_rout_inst_mux_f6_18 (_n0218<26>)
+     LUT3:i1->o            2   0.549   1.206  mmux_fb_i6_result1 (fb<2>)
+     LUT4_L:I2->LO         1   0.549   0.000  maddsub__n0066_inst_lut3_21 (maddsub__n0066_inst_lut3_2)
+     MUXCY:s->o            1   0.659   0.000  maddsub__n0066_inst_cy_18 (maddsub__n0066_inst_cy_18)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_19 (maddsub__n0066_inst_cy_19)
+     XORCY:ci->o           1   0.420   1.035  maddsub__n0066_inst_sum_20 (_n0066<4>)
+     LUT3:i2->o            2   0.549   1.206  ff<4>20 (ff<4>)
+     LUT4:i2->o            1   0.549   1.035  _n004812 (choice257)
+     LUT4_L:I0->LO         1   0.549   0.000  _n004836 (_n0048)
+     FDE_1:d                   0.709          zy
+    ----------------------------------------
+    Total                     13.850ns (6.830ns logic, 7.020ns route)
+                                       (49.3% logic, 50.7% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'mpck1:o'
+Delay:               4.964ns (Levels of Logic = 11)
+  Source:            mpc_0
+  Destination:       mpc_9
+  Source Clock:      mpck1:o rising
+  Destination Clock: mpck1:o rising
+
+  Data Path: mpc_0 to mpc_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCPE:c->q            2   1.085   1.206  mpc_0 (mpc_0)
+     LUT3:i2->o            1   0.549   0.000  mpc_inst_lut3_1311 (mpc_inst_lut3_131)
+     MUXCY:s->o            1   0.659   0.000  mpc_inst_cy_26 (mpc_inst_cy_26)
+     MUXCY:ci->o           1   0.042   0.000  mpc_inst_cy_27 (mpc_inst_cy_27)
+     MUXCY:ci->o           1   0.042   0.000  mpc_inst_cy_28 (mpc_inst_cy_28)
+     MUXCY:ci->o           1   0.042   0.000  mpc_inst_cy_29 (mpc_inst_cy_29)
+     MUXCY:ci->o           1   0.042   0.000  mpc_inst_cy_30 (mpc_inst_cy_30)
+     MUXCY:ci->o           1   0.042   0.000  mpc_inst_cy_31 (mpc_inst_cy_31)
+     MUXCY:ci->o           1   0.042   0.000  mpc_inst_cy_32 (mpc_inst_cy_32)
+     MUXCY:ci->o           1   0.042   0.000  mpc_inst_cy_33 (mpc_inst_cy_33)
+     MUXCY:ci->o           0   0.042   0.000  mpc_inst_cy_34 (mpc_inst_cy_34)
+     XORCY:ci->o           1   0.420   0.000  mpc_inst_sum_34 (mpc_inst_sum_34)
+     FDCPE:d                   0.709          mpc_9
+    ----------------------------------------
+    Total                      4.964ns (3.758ns logic, 1.206ns route)
+                                       (75.7% logic, 24.3% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+Offset:              4.471ns (Levels of Logic = 2)
+  Source:            run
+  Destination:       mclk
+  Destination Clock: clk falling
+
+  Data Path: run to mclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:i->o             2   0.776   1.206  run_ibuf (run_ibuf)
+     LUT2:i0->o            2   0.549   1.206  _n00871 (_n0087)
+     FDC_1:clr                 0.734          mclk
+    ----------------------------------------
+    Total                      4.471ns (2.059ns logic, 2.412ns route)
+                                       (46.1% logic, 53.9% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mclk:q'
+Offset:              5.875ns (Levels of Logic = 2)
+  Source:            reset
+  Destination:       pc_18
+  Destination Clock: mclk:q rising
+
+  Data Path: reset to pc_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:i->o             2   0.776   1.206  reset_ibuf (reset_ibuf)
+     LUT1:i0->o           17   0.549   2.610  mclr_aclr_inv1 (pc_inst_inv_1)
+     FDCPE_1:clr               0.734          pc_18
+    ----------------------------------------
+    Total                      5.875ns (2.059ns logic, 3.816ns route)
+                                       (35.0% logic, 65.0% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mick1:o'
+Offset:              3.393ns (Levels of Logic = 1)
+  Source:            co<9>
+  Destination:       mir_9
+  Destination Clock: mick1:o rising
+
+  Data Path: co<9> to mir_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:i->o             9   0.776   1.908  co_9_ibuf (co_9_ibuf)
+     FD:d                      0.709          mir_9
+    ----------------------------------------
+    Total                      3.393ns (1.485ns logic, 1.908ns route)
+                                       (43.8% logic, 56.2% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pcadd__n00011:o'
+Offset:              3.681ns (Levels of Logic = 3)
+  Source:            prix
+  Destination:       pcadd_0
+  Destination Clock: pcadd__n00011:o falling
+
+  Data Path: prix to pcadd_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:i->o             3   0.776   1.332  prix_ibuf (prix_ibuf)
+     LUT4:i1->o            1   0.549   0.000  _n002768_f (n15534)
+     MUXF5:i0->o           1   0.315   0.000  _n002768 (_n0027)
+     LD:d                      0.709          pcadd_0
+    ----------------------------------------
+    Total                      3.681ns (2.349ns logic, 1.332ns route)
+                                       (63.8% logic, 36.2% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+Offset:              12.827ns (Levels of Logic = 2)
+  Source:            mclk
+  Destination:       ior
+  Source Clock:      clk falling
+
+  Data Path: mclk to ior
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:c->q           78   1.085   5.490  mclk (mclk_obuf)
+     LUT4:i1->o            1   0.549   1.035  ior1 (ior_obuf)
+     OBUF:i->o                 4.668          ior_obuf (ior)
+    ----------------------------------------
+    Total                     12.827ns (6.302ns logic, 6.525ns route)
+                                       (49.1% logic, 50.9% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk:q'
+Offset:              20.204ns (Levels of Logic = 15)
+  Source:            ir_0
+  Destination:       db<7>
+  Source Clock:      mclk:q falling
+
+  Data Path: ir_0 to db<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:c->q           41   1.085   3.825  ir_0 (ir_0)
+     LUT3_L:I0->LO         1   0.549   0.000  mmux_rout_inst_lut3_1071 (mmux_rout__net165)
+     MUXF5:i0->o           1   0.315   0.000  mmux_rout_inst_mux_f5_49 (mmux_rout__net167)
+     MUXF6:i0->o           2   0.316   1.206  mmux_rout_inst_mux_f6_18 (_n0218<26>)
+     LUT3:i1->o            2   0.549   1.206  mmux_fb_i6_result1 (fb<2>)
+     LUT4_L:I2->LO         1   0.549   0.000  maddsub__n0066_inst_lut3_21 (maddsub__n0066_inst_lut3_2)
+     MUXCY:s->o            1   0.659   0.000  maddsub__n0066_inst_cy_18 (maddsub__n0066_inst_cy_18)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_19 (maddsub__n0066_inst_cy_19)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_20 (maddsub__n0066_inst_cy_20)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_21 (maddsub__n0066_inst_cy_21)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_22 (maddsub__n0066_inst_cy_22)
+     XORCY:ci->o           1   0.420   1.035  maddsub__n0066_inst_sum_23 (_n0066<7>)
+     LUT3:i2->o            2   0.549   1.206  ff<7>20 (ff<7>)
+     LUT3:i1->o            1   0.549   0.000  mmux__n0023_inst_mux_f5_12111_f (n15544)
+     MUXF5:i0->o           1   0.315   1.035  mmux__n0023_inst_mux_f5_12111 (db_7_iobuf)
+     IOBUF:i->io               4.668          db_7_iobuf (db<7>)
+    ----------------------------------------
+    Total                     20.204ns (10.691ns logic, 9.513ns route)
+                                       (52.9% logic, 47.1% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mick1:o'
+Offset:              19.765ns (Levels of Logic = 15)
+  Source:            mir_15
+  Destination:       db<7>
+  Source Clock:      mick1:o rising
+
+  Data Path: mir_15 to db<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:c->q              16   1.085   2.520  mir_15 (mir_15)
+     LUT3:i0->o           10   0.549   1.980  _n00501 (maddsub__n0066_inst_lut3_8)
+     LUT4:i3->o            8   0.549   1.845  _n00491 (_n0049)
+     LUT4_L:I1->LO         1   0.549   0.000  maddsub__n0066_inst_lut3_01 (maddsub__n0066_inst_lut3_0)
+     MUXCY:s->o            1   0.659   0.000  maddsub__n0066_inst_cy_16 (maddsub__n0066_inst_cy_16)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_17 (maddsub__n0066_inst_cy_17)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_18 (maddsub__n0066_inst_cy_18)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_19 (maddsub__n0066_inst_cy_19)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_20 (maddsub__n0066_inst_cy_20)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_21 (maddsub__n0066_inst_cy_21)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_22 (maddsub__n0066_inst_cy_22)
+     XORCY:ci->o           1   0.420   1.035  maddsub__n0066_inst_sum_23 (_n0066<7>)
+     LUT3:i2->o            2   0.549   1.206  ff<7>20 (ff<7>)
+     LUT3:i1->o            1   0.549   0.000  mmux__n0023_inst_mux_f5_12111_f (n15544)
+     MUXF5:i0->o           1   0.315   1.035  mmux__n0023_inst_mux_f5_12111 (db_7_iobuf)
+     IOBUF:i->io               4.668          db_7_iobuf (db<7>)
+    ----------------------------------------
+    Total                     19.765ns (10.144ns logic, 9.621ns route)
+                                       (51.3% logic, 48.7% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk_1:q'
+Offset:              17.701ns (Levels of Logic = 15)
+  Source:            r2_2
+  Destination:       db<7>
+  Source Clock:      mclk_1:q falling
+
+  Data Path: r2_2 to db<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:c->q            3   1.085   1.332  r2_2 (r2_2)
+     LUT3_L:I1->LO         1   0.549   0.000  mmux_rout_inst_lut3_1081 (mmux_rout__net166)
+     MUXF5:i1->o           1   0.305   0.000  mmux_rout_inst_mux_f5_49 (mmux_rout__net167)
+     MUXF6:i0->o           2   0.316   1.206  mmux_rout_inst_mux_f6_18 (_n0218<26>)
+     LUT3:i1->o            2   0.549   1.206  mmux_fb_i6_result1 (fb<2>)
+     LUT4_L:I2->LO         1   0.549   0.000  maddsub__n0066_inst_lut3_21 (maddsub__n0066_inst_lut3_2)
+     MUXCY:s->o            1   0.659   0.000  maddsub__n0066_inst_cy_18 (maddsub__n0066_inst_cy_18)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_19 (maddsub__n0066_inst_cy_19)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_20 (maddsub__n0066_inst_cy_20)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_21 (maddsub__n0066_inst_cy_21)
+     MUXCY:ci->o           1   0.042   0.000  maddsub__n0066_inst_cy_22 (maddsub__n0066_inst_cy_22)
+     XORCY:ci->o           1   0.420   1.035  maddsub__n0066_inst_sum_23 (_n0066<7>)
+     LUT3:i2->o            2   0.549   1.206  ff<7>20 (ff<7>)
+     LUT3:i1->o            1   0.549   0.000  mmux__n0023_inst_mux_f5_12111_f (n15544)
+     MUXF5:i0->o           1   0.315   1.035  mmux__n0023_inst_mux_f5_12111 (db_7_iobuf)
+     IOBUF:i->io               4.668          db_7_iobuf (db<7>)
+    ----------------------------------------
+    Total                     17.701ns (10.681ns logic, 7.020ns route)
+                                       (60.3% logic, 39.7% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ab_10__n00011:o'
+Offset:              9.012ns (Levels of Logic = 2)
+  Source:            ab_15_0
+  Destination:       ior
+  Source Clock:      ab_10__n00011:o falling
+
+  Data Path: ab_15_0 to ior
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:g->q               5   1.194   1.566  ab_15_0 (ab_15_0)
+     LUT4:i2->o            1   0.549   1.035  ior1 (ior_obuf)
+     OBUF:i->o                 4.668          ior_obuf (ior)
+    ----------------------------------------
+    Total                      9.012ns (6.411ns logic, 2.601ns route)
+                                       (71.1% logic, 28.9% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mpck1:o'
+Offset:              6.959ns (Levels of Logic = 1)
+  Source:            mpc_0
+  Destination:       ci<0>
+  Source Clock:      mpck1:o rising
+
+  Data Path: mpc_0 to ci<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCPE:c->q            2   1.085   1.206  mpc_0 (mpc_0)
+     OBUF:i->o                 4.668          ci_0_obuf (ci<0>)
+    ----------------------------------------
+    Total                      6.959ns (5.753ns logic, 1.206ns route)
+                                       (82.7% logic, 17.3% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               14.107ns (Levels of Logic = 4)
+  Source:            mux<0>
+  Destination:       ci<13>
+
+  Data Path: mux<0> to ci<13>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:i->o            72   0.776   5.220  mux_0_ibuf (mux_0_ibuf)
+     MUXF5:s->o            1   0.824   1.035  mmux__n0035_inst_mux_f5_2111 (_n0211<1>)
+     LUT3:i1->o            1   0.549   1.035  mmux_ci<13>_result1 (ci_13_obuf)
+     OBUF:i->o                 4.668          ci_13_obuf (ci<13>)
+    ----------------------------------------
+    Total                     14.107ns (6.817ns logic, 7.290ns route)
+                                       (48.3% logic, 51.7% route)
+
+=========================================================================
+CPU : 2.45 / 2.73 s | Elapsed : 2.00 / 2.00 s
+ 
+--> 
+
+Total memory usage is 66472 kilobytes
+
+

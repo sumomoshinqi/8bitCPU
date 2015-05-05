@@ -1,0 +1,3028 @@
+Release 5.1i - Par F.23
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Fri Jul 09 12:53:45 2010
+
+File: cpu_8.dly
+
+ The 20 Worst Net Delays are:
+-------------------------------
+| Max Delay (ns)  | Netname   |
+-------------------------------
+   7.230            mux_0_ibuf
+   6.386            mux_1_ibuf
+   6.286            mux_2_ibuf
+   5.735            mir<11>
+   5.478            mir<10>
+   5.405            co_9_ibuf
+   4.831            clk_ibuf
+   4.755            mir<25>
+   4.615            reset_ibuf
+   4.600            mclk_obuf
+   4.459            mir<0>
+   4.224            mir<8>
+   4.168            mir<26>
+   4.057            mir<23>
+   3.936            mclk_1
+   3.882            mir<6>
+   3.868            ab_10__n0001
+   3.714            mir<24>
+   3.674            mir<5>
+   3.593            krix_ibuf
+---------------------------------
+
+-------------------------------------------------------------------------------
+                               Net Delays
+-------------------------------------------------------------------------------
+
+GLOBAL_LOGIC0
+   PWR_GND_0.Y
+         0.525  pc<10>.G1
+
+GLOBAL_LOGIC1
+   PWR_VCC_0.X
+         0.383  pc<10>.F1
+
+_n0025<0>
+   ab_0_0.Y
+         2.354  ab<0>.O
+
+_n0025<10>
+   ab_10_0.Y
+         2.056  ab<10>.O
+
+_n0025<11>
+   ab_11_0.Y
+         1.990  ab<11>.O
+
+_n0025<12>
+   ab_12_0.Y
+         1.254  ab<12>.O
+
+_n0025<13>
+   ab_13_0.Y
+         1.728  ab<13>.O
+
+_n0025<14>
+   ab_14_0.Y
+         1.821  ab<14>.O
+
+_n0025<15>
+   ab_15_0.Y
+         1.131  ab<15>.O
+
+_n0025<1>
+   ab_1_0.Y
+         2.207  ab<1>.O
+
+_n0025<2>
+   ab_2_0.Y
+         2.383  ab<2>.O
+
+_n0025<3>
+   ab_3_0.Y
+         2.164  ab<3>.O
+
+_n0025<4>
+   ab_4_0.Y
+         2.187  ab<4>.O
+
+_n0025<5>
+   ab_5_0.Y
+         1.981  ab<5>.O
+
+_n0025<6>
+   ab_6_0.Y
+         2.207  ab<6>.O
+
+_n0025<7>
+   ab_7_0.Y
+         1.995  ab<7>.O
+
+_n0025<8>
+   ab_8_0.Y
+         2.209  ab<8>.O
+
+_n0025<9>
+   ab_9_0.Y
+         2.025  ab<9>.O
+
+_n0038
+   r0<7>.X
+         1.159  r0<1>.F4
+         1.418  r0<1>.G1
+         0.901  r0<3>.F4
+         1.282  r0<3>.G1
+         0.454  r0<5>.F3
+         0.481  r0<5>.G3
+         0.915  r0<6>.G2
+         0.186  r0<7>.G4
+
+_n0039
+   r1<7>.X
+         1.257  r1<1>.F3
+         1.260  r1<1>.G4
+         1.345  r1<2>.G2
+         0.949  r1<6>.F1
+         0.766  r1<6>.G4
+         1.020  r1<5>.F4
+         1.381  r1<5>.G2
+         0.186  r1<7>.G4
+
+_n0040
+   r2<7>.X
+         1.281  r2<1>.F2
+         1.300  r2<1>.G2
+         0.586  r2<3>.F2
+         0.605  r2<3>.G2
+         1.212  r2<5>.F2
+         0.945  r2<5>.G4
+         0.865  r3<6>.G4
+         0.186  r2<7>.G4
+
+_n0041
+   r3<7>.X
+         0.752  r3<1>.F3
+         0.731  r3<1>.G4
+         1.637  r3<3>.F2
+         1.242  r3<3>.G3
+         1.406  r3<6>.F2
+         1.692  r3<5>.F1
+         1.522  r3<5>.G2
+         0.186  r3<7>.G4
+
+_n0042
+   r4<7>.X
+         1.454  r4<1>.F1
+         1.436  r4<1>.G1
+         1.145  r4<3>.F1
+         1.043  r4<3>.G4
+         1.122  r4<5>.F1
+         1.260  r4<5>.G1
+         0.483  r5<6>.G2
+         0.186  r4<7>.G4
+
+_n0043
+   r5<7>.X
+         1.445  r5<1>.F4
+         1.692  r5<1>.G2
+         0.424  r5<3>.F3
+         0.451  r5<3>.G3
+         1.319  r5<6>.F2
+         0.382  r5<5>.F1
+         0.364  r5<5>.G1
+         0.185  r5<7>.G4
+
+_n0044
+   r6<7>.X
+         1.316  r6<1>.F2
+         1.449  r6<1>.G1
+         0.431  r6<3>.F4
+         0.470  r6<3>.G4
+         1.103  r6<5>.F1
+         1.091  r6<5>.G1
+         0.928  r7<6>.G4
+         0.186  r6<7>.G4
+
+_n0045
+   r7<7>.X
+         1.931  r7<1>.F2
+         1.790  r7<1>.G3
+         0.382  r7<3>.F1
+         0.364  r7<3>.G1
+         1.833  r7<6>.F1
+         1.219  r7<5>.F2
+         0.751  r7<5>.G4
+         0.185  r7<7>.G4
+
+_n004816/O
+   zy.X
+         0.186  zy.G4
+
+_n0049
+   maddsub__n0066_inst_lut3_8.Y
+         1.117  _n0066<0>.F2
+         0.942  _n0066<0>.G3
+         1.083  _n0066<2>.F2
+         0.776  _n0066<2>.G4
+         0.897  _n0066<4>.F4
+         0.911  _n0066<4>.G4
+         0.963  _n0066<6>.F4
+         1.307  _n0066<6>.G2
+
+_n0062
+   _n0063.Y
+         1.311  fb<0>.G2
+         1.171  fb<1>.G1
+         1.069  ff<2>15/O.F2
+         0.331  ff<3>16/O.F3
+         1.151  ff<4>16/O.F1
+         1.392  fb<5>.G3
+         1.495  ff<6>16/O.F2
+         0.914  ff<7>16/O.F2
+
+_n0063
+   _n0063.X
+         1.263  fb<0>.G1
+         0.825  fb<1>.G3
+         0.657  ff<2>15/O.F4
+         0.812  ff<3>16/O.F1
+         0.957  ff<4>16/O.F3
+         1.597  fb<5>.G1
+         1.028  ff<6>16/O.F3
+         0.918  ff<7>16/O.F4
+
+_n0066<0>
+   _n0066<0>.X
+         0.543  ff<0>.F1
+
+_n0066<1>
+   _n0066<0>.Y
+         0.770  ff<0>.G1
+         0.525  ff<1>.G1
+
+_n0066<2>
+   _n0066<2>.X
+         0.743  ff<2>15/O.G2
+
+_n0066<3>
+   _n0066<2>.Y
+         0.323  ff<3>16/O.G2
+
+_n0066<4>
+   _n0066<4>.X
+         0.365  ff<4>16/O.G1
+
+_n0066<5>
+   _n0066<4>.Y
+         0.307  ff<5>.F4
+
+_n0066<6>
+   _n0066<6>.X
+         0.887  zy.F2
+         0.365  ff<6>16/O.G1
+
+_n0066<7>
+   _n0066<6>.Y
+         0.525  ff<7>16/O.G1
+
+_n0066<8>
+   _n0066<8>.X
+         0.954  cy.F4
+
+_n0074<10>
+   _n0074<10>.X
+         0.799  sp<11>.G1
+
+_n0074<11>
+   _n0074<10>.Y
+         0.571  sp<11>.F4
+
+_n0074<12>
+   _n0074<12>.X
+         0.786  sp<13>.G3
+
+_n0074<13>
+   _n0074<12>.Y
+         0.705  sp<13>.F4
+
+_n0074<14>
+   _n0074<14>.X
+         0.365  sp<15>.G1
+
+_n0074<15>
+   _n0074<14>.Y
+         0.304  sp<15>.F2
+
+_n0074<1>
+   _n0074<1>.Y
+         0.304  sp<1>.F2
+
+_n0074<2>
+   _n0074<2>.X
+         0.365  sp<3>.G1
+
+_n0074<3>
+   _n0074<2>.Y
+         0.304  sp<3>.F2
+
+_n0074<4>
+   _n0074<4>.X
+         0.365  sp<5>.G1
+
+_n0074<5>
+   _n0074<4>.Y
+         0.304  sp<5>.F2
+
+_n0074<6>
+   _n0074<6>.X
+         0.365  sp<7>.G1
+
+_n0074<7>
+   _n0074<6>.Y
+         0.304  sp<7>.F2
+
+_n0074<8>
+   _n0074<8>.X
+         0.610  sp<9>.G4
+
+_n0074<9>
+   _n0074<8>.Y
+         0.614  sp<9>.F3
+
+_n0085
+   _n0066<8>.Y
+         1.268  ff<5>.F1
+         1.312  ff<0>.F2
+         1.234  ff<0>.G3
+         1.137  zy.F1
+         1.105  ff<2>15/O.G3
+         1.324  ff<3>16/O.G1
+         0.770  ff<4>16/O.G3
+         0.727  ff<6>16/O.G3
+         0.985  ff<7>16/O.G2
+         1.209  ff<1>.G3
+
+_n0087
+   _n0087.Y
+         1.065  mclk_1.SR
+         0.945  mclk_obuf.SR
+
+_n0103
+   ci_11_obuf.Y
+         1.944  pc<10>.CE
+         2.384  pc<11>.CE
+         2.631  pc<13>.CE
+         2.496  pc<15>.CE
+         2.593  pc_17.CE
+         2.659  pc_19.CE
+         2.523  pc_21.CE
+         2.754  pc_23.CE
+         2.944  pc_25.CE
+
+_n0206<1>
+   _n0206<1>.X
+         2.293  ci_15_obuf.F1
+
+_n0209<1>
+   _n0209<1>.X
+         2.086  ci_14_obuf.F4
+
+_n0211<1>
+   _n0211<1>.X
+         1.947  ci_15_obuf.G3
+
+_n0213<1>
+   _n0213<1>.X
+         2.069  ci_14_obuf.G2
+
+_n0215<1>
+   _n0215<1>.X
+         0.702  ci_11_obuf.F3
+
+_n0218<24>
+   _n0218<24>.Y
+         1.250  db_0_iobuf.F3
+         1.471  fb<0>.F1
+
+_n0218<25>
+   _n0218<25>.Y
+         1.194  db_1_iobuf.F2
+         1.939  fb<1>.F4
+
+_n0218<26>
+   _n0218<26>.Y
+         1.930  db_2_iobuf.F2
+         2.454  fb<2>.G4
+
+_n0218<27>
+   _n0218<27>.Y
+         1.239  db_3_iobuf.F1
+         1.750  fb<6>.G4
+
+_n0218<28>
+   _n0218<28>.Y
+         1.312  db_4_iobuf.F2
+         1.541  fb<7>.G1
+
+_n0218<29>
+   _n0218<29>.Y
+         1.492  db_5_iobuf.F4
+         1.775  fb<5>.F3
+
+_n0218<30>
+   _n0218<30>.Y
+         1.200  db_6_iobuf.F4
+         1.661  fb<6>.F4
+
+_n0218<31>
+   _n0218<31>.Y
+         0.307  db_7_iobuf.F4
+         1.013  fb<7>.F4
+
+a<0>
+   a<1>.YQ
+         1.269  mmux_ci<24>__net97.G1
+         1.116  act<1>.BY
+         1.332  cya.BY
+
+a<1>
+   a<1>.XQ
+         0.900  mmux_ci<25>__net104.G4
+         1.108  a<1>.G2
+         1.191  act<1>.BX
+
+a<2>
+   a<3>.YQ
+         1.305  mmux_ci<26>__net111.G3
+         1.072  a<1>.F2
+         1.411  act<3>.BY
+
+a<3>
+   a<3>.XQ
+         1.413  mmux_ci<27>__net118.G2
+         0.959  a<3>.G2
+         1.403  act<3>.BX
+
+a<4>
+   a<5>.YQ
+         1.766  mmux_ci<28>__net125.G4
+         0.932  a<3>.F4
+         1.132  act<5>.BY
+
+a<5>
+   a<5>.XQ
+         1.557  mmux_ci<29>__net132.G4
+         0.975  a<5>.G1
+         1.176  act<5>.BX
+
+a<6>
+   a<7>.YQ
+         1.404  mmux_ci<30>__net139.G3
+         0.798  a<5>.F4
+         1.259  act<7>.BY
+
+a<7>
+   a<7>.XQ
+         1.458  mmux_ci<31>__net146.G3
+         0.736  a<7>.F3
+         0.870  a<7>.G3
+         1.440  act<7>.BX
+
+a_n839
+   a_n839.Y
+         1.357  a<1>.CE
+         1.480  a<3>.CE
+         1.786  a<5>.CE
+         1.786  a<7>.CE
+
+ab_0_0
+   ab_0_0.YQ
+         0.501  pc<10>.G4
+         1.267  mwr_obuf.G2
+
+ab_10_0
+   ab_10_0.YQ
+         1.298  pc_19.G4
+
+ab_10__n0001
+   ab_10__n0001.Y
+         2.824  ab<10>.CLK
+         3.075  ab<11>.CLK
+         3.075  ab<12>.CLK
+         3.085  ab<13>.CLK
+         3.572  ab<14>.CLK
+         3.671  ab<15>.CLK
+         2.748  ab<0>.CLK
+         2.795  ab<1>.CLK
+         2.795  ab<2>.CLK
+         2.842  ab<3>.CLK
+         2.842  ab<4>.CLK
+         2.842  ab<5>.CLK
+         2.746  ab<6>.CLK
+         2.746  ab<7>.CLK
+         2.948  ab<8>.CLK
+         2.782  ab<9>.CLK
+         3.711  ab_10_0.CLK
+         3.868  ab_11_0.CLK
+         3.680  ab_12_0.CLK
+         3.780  ab_13_0.CLK
+         3.226  ab_14_0.CLK
+         3.741  ab_15_0.CLK
+         1.840  ab_0_0.CLK
+         2.170  ab_1_0.CLK
+         1.888  ab_2_0.CLK
+         1.980  ab_3_0.CLK
+         1.935  ab_4_0.CLK
+         2.686  ab_5_0.CLK
+         3.068  ab_6_0.CLK
+         3.118  ab_7_0.CLK
+         2.883  ab_8_0.CLK
+         2.686  ab_9_0.CLK
+
+ab_11_0
+   ab_11_0.YQ
+         1.076  pc_21.F3
+
+ab_12_0
+   ab_12_0.YQ
+         1.713  pc_21.G1
+
+ab_13_0
+   ab_13_0.YQ
+         1.354  pc_23.F1
+
+ab_14_0
+   ab_14_0.YQ
+         0.751  pc_23.G4
+
+ab_15_0
+   ab_15_0.YQ
+         0.486  pc_25.F3
+         0.536  pc_25.G4
+         1.822  n12932.G3
+         2.119  mwr_obuf.F3
+         2.167  mwr_obuf.G3
+
+ab_1_0
+   ab_1_0.YQ
+         0.885  pc<11>.F2
+         1.462  n12932.G2
+
+ab_2_0
+   ab_2_0.YQ
+         0.475  pc<11>.G3
+
+ab_3_0
+   ab_3_0.YQ
+         0.911  pc<13>.F3
+
+ab_4_0
+   ab_4_0.YQ
+         0.463  pc<13>.G4
+
+ab_5_0
+   ab_5_0.YQ
+         1.375  pc<15>.F1
+
+ab_6_0
+   ab_6_0.YQ
+         1.349  pc<15>.G1
+
+ab_7_0
+   ab_7_0.YQ
+         1.238  pc_17.F2
+
+ab_8_0
+   ab_8_0.YQ
+         1.249  pc_17.G2
+
+ab_9_0
+   ab_9_0.YQ
+         0.424  pc_19.F4
+
+act<0>
+   act<1>.YQ
+         1.319  ci_16_obuf.F3
+         2.222  _n0066<0>.F1
+         1.753  choice289.G2
+
+act<1>
+   act<1>.XQ
+         1.145  ci_17_obuf.F3
+         2.363  _n0066<0>.G1
+         1.967  choice281.G4
+
+act<2>
+   act<3>.YQ
+         1.110  ci_18_obuf.F4
+         2.436  _n0066<2>.F1
+         2.241  choice281.F1
+
+act<3>
+   act<3>.XQ
+         1.296  ci_19_obuf.F3
+         2.085  _n0066<2>.G1
+         1.627  choice289.F2
+
+act<4>
+   act<5>.YQ
+         1.773  ci_20_obuf.F1
+         2.042  _n0066<4>.F1
+         1.435  choice325.G3
+
+act<5>
+   act<5>.XQ
+         1.492  ci_21_obuf.F1
+         1.854  _n0066<4>.G1
+         1.381  choice316.G4
+
+act<6>
+   act<7>.YQ
+         2.035  ci_22_obuf.F2
+         1.856  _n0066<6>.F1
+         1.290  choice316.F4
+
+act<7>
+   act<7>.XQ
+         1.751  ci_23_obuf.F1
+         1.524  _n0066<6>.G1
+         1.352  choice325.F2
+
+adrh<0>
+   adrh<1>.YQ
+         0.847  mmux_ci<24>__net97.F4
+         1.184  ab_8_0.G3
+
+adrh<1>
+   adrh<1>.XQ
+         0.486  mmux_ci<25>__net104.F3
+         1.079  ab_9_0.G1
+
+adrh<2>
+   adrh<3>.YQ
+         1.007  mmux_ci<26>__net111.F4
+         1.137  ab_10_0.G3
+
+adrh<3>
+   adrh<3>.XQ
+         1.287  mmux_ci<27>__net118.F2
+         1.127  ab_11_0.G2
+
+adrh<4>
+   adrh<5>.YQ
+         1.726  mmux_ci<28>__net125.F2
+         1.686  ab_12_0.G3
+
+adrh<5>
+   adrh<5>.XQ
+         1.261  mmux_ci<29>__net132.F4
+         1.434  ab_13_0.G1
+
+adrh<6>
+   adrh<7>.YQ
+         1.142  mmux_ci<30>__net139.F1
+         0.513  ab_14_0.G3
+
+adrh<7>
+   adrh<7>.XQ
+         0.965  mmux_ci<31>__net146.F1
+         0.927  ab_15_0.G3
+
+adrl<0>
+   adrl<1>.YQ
+         1.494  mmux_ci<16>__net41.F3
+         1.684  ab_0_0.G1
+
+adrl<1>
+   adrl<1>.XQ
+         1.112  mmux_ci<17>__net48.F4
+         0.513  ab_1_0.G3
+
+adrl<2>
+   adrl<3>.YQ
+         1.167  mmux_ci<18>__net55.F3
+         1.496  ab_2_0.G3
+
+adrl<3>
+   adrl<3>.XQ
+         1.304  mmux_ci<19>__net62.F4
+         1.161  ab_3_0.G3
+
+adrl<4>
+   adrl<5>.YQ
+         1.457  mmux_ci<20>__net69.F1
+         1.613  ab_4_0.G2
+
+adrl<5>
+   adrl<5>.XQ
+         1.286  mmux_ci<21>__net76.F3
+         1.322  ab_5_0.G3
+
+adrl<6>
+   adrl<7>.YQ
+         1.325  mmux_ci<22>__net83.F1
+         1.290  ab_6_0.G1
+
+adrl<7>
+   adrl<7>.XQ
+         1.284  mmux_ci<23>__net90.F2
+         1.322  ab_7_0.G3
+
+choice102
+   ab_11_0.X
+         0.186  ab_11_0.G4
+
+choice110
+   ab_10_0.X
+         0.186  ab_10_0.G4
+
+choice118
+   ab_12_0.X
+         0.186  ab_12_0.G4
+
+choice126
+   ab_14_0.X
+         0.186  ab_14_0.G4
+
+choice134
+   ab_13_0.X
+         0.186  ab_13_0.G4
+
+choice14
+   ab_15_0.X
+         0.186  ab_15_0.G4
+
+choice164
+   choice170.Y
+         0.626  choice179.G3
+
+choice170
+   choice170.X
+         0.365  choice179.G1
+
+choice179
+   choice179.X
+         0.186  choice179.G4
+
+choice22
+   ab_0_0.X
+         0.186  ab_0_0.G4
+
+choice246
+   choice289.Y
+         0.358  fb<0>.G3
+
+choice249
+   fb<0>.Y
+         1.073  ff<0>.F4
+
+choice257
+   ff<5>.Y
+         1.083  zy.G2
+
+choice263
+   ff<0>.Y
+         0.768  zy.G3
+
+choice272
+   choice281.Y
+         1.218  fb<1>.G2
+
+choice275
+   fb<1>.Y
+         0.483  ff<0>.G2
+         0.483  ff<1>.G2
+
+choice281
+   choice281.X
+         0.607  ff<2>15/O.F3
+
+choice289
+   choice289.X
+         0.954  ff<3>16/O.F4
+
+choice298
+   choice325.Y
+         0.883  ff<4>16/O.F2
+
+choice30
+   ab_1_0.X
+         0.186  ab_1_0.G4
+
+choice307
+   choice316.Y
+         0.323  fb<5>.G2
+
+choice311
+   fb<5>.Y
+         0.980  ff<5>.F3
+
+choice316
+   choice316.X
+         0.684  ff<6>16/O.F4
+
+choice325
+   choice325.X
+         0.383  ff<7>16/O.F1
+
+choice38
+   ab_3_0.X
+         0.186  ab_3_0.G4
+
+choice46
+   ab_2_0.X
+         0.186  ab_2_0.G4
+
+choice54
+   ab_4_0.X
+         0.186  ab_4_0.G4
+
+choice62
+   ab_5_0.X
+         0.186  ab_5_0.G4
+
+choice70
+   ab_6_0.X
+         0.186  ab_6_0.G4
+
+choice78
+   ab_8_0.X
+         0.186  ab_8_0.G4
+
+choice86
+   ab_7_0.X
+         0.186  ab_7_0.G4
+
+choice94
+   ab_9_0.X
+         0.186  ab_9_0.G4
+
+ci_10_obuf
+   choice179.Y
+         2.974  ci<10>.O
+
+ci_11_obuf
+   ci_11_obuf.X
+         2.291  ci<11>.O
+
+ci_12_obuf
+   ci_14_obuf.Y
+         2.850  ci<12>.O
+
+ci_13_obuf
+   ci_15_obuf.Y
+         2.086  ci<13>.O
+
+ci_14_obuf
+   ci_14_obuf.X
+         2.537  ci<14>.O
+
+ci_15_obuf
+   ci_15_obuf.X
+         1.992  ci<15>.O
+
+ci_16_obuf
+   ci_16_obuf.Y
+         2.248  ci<16>.O
+
+ci_17_obuf
+   ci_17_obuf.Y
+         3.445  ci<17>.O
+
+ci_18_obuf
+   ci_18_obuf.Y
+         3.099  ci<18>.O
+
+ci_19_obuf
+   ci_19_obuf.Y
+         2.996  ci<19>.O
+
+ci_20_obuf
+   ci_20_obuf.Y
+         2.967  ci<20>.O
+
+ci_21_obuf
+   ci_21_obuf.Y
+         2.202  ci<21>.O
+
+ci_22_obuf
+   ci_22_obuf.Y
+         3.088  ci<22>.O
+
+ci_23_obuf
+   ci_23_obuf.Y
+         2.499  ci<23>.O
+
+ci_24_obuf
+   ci_24_obuf.Y
+         1.198  ci<24>.O
+
+ci_25_obuf
+   ci_25_obuf.Y
+         1.684  ci<25>.O
+
+ci_26_obuf
+   ci_26_obuf.Y
+         2.416  ci<26>.O
+
+ci_27_obuf
+   ci_27_obuf.Y
+         2.212  ci<27>.O
+
+ci_28_obuf
+   ci_28_obuf.Y
+         1.903  ci<28>.O
+
+ci_29_obuf
+   ci_29_obuf.Y
+         2.382  ci<29>.O
+
+ci_30_obuf
+   ci_30_obuf.Y
+         1.931  ci<30>.O
+
+ci_31_obuf
+   ci_31_obuf.Y
+         2.202  ci<31>.O
+
+clk_ibuf
+   clk.I
+         4.831  n12932.F2
+         4.570  mpck.F3
+         4.597  mpck.G3
+         4.169  mclk_1.CLK
+         4.674  mwr_obuf.F4
+         4.247  mclk_obuf.CLK
+
+co_0_ibuf
+   co<0>.I
+         1.891  choice179.F4
+
+co_3_ibuf
+   co<3>.I
+         2.320  choice179.F3
+
+co_9_ibuf
+   co<9>.I
+         4.072  db<0>.T
+         4.787  db<1>.T
+         4.787  db<2>.T
+         5.125  db<3>.T
+         5.287  db<4>.T
+         5.054  db<5>.T
+         5.405  db<6>.T
+         5.263  db<7>.T
+
+cy
+   cy.YQ
+         0.891  pcadd_0.G4
+
+cya
+   cya.YQ
+         1.587  cy.G3
+
+db_0_iobuf
+   db_0_iobuf.X
+         2.553  db<0>.O
+
+db_1_iobuf
+   db_1_iobuf.X
+         1.741  db<1>.O
+
+db_2_iobuf
+   db_2_iobuf.X
+         2.152  db<2>.O
+
+db_3_iobuf
+   db_3_iobuf.X
+         1.607  db<3>.O
+
+db_4_iobuf
+   db_4_iobuf.X
+         1.762  db<4>.O
+
+db_5_iobuf
+   db_5_iobuf.X
+         2.358  db<5>.O
+
+db_6_iobuf
+   db_6_iobuf.X
+         1.633  db<6>.O
+
+db_7_iobuf
+   db_7_iobuf.X
+         1.760  db<7>.O
+
+fb<0>
+   fb<0>.X
+         1.127  _n0066<0>.F3
+         0.186  fb<0>.G4
+
+fb<1>
+   fb<1>.X
+         0.734  _n0066<0>.G2
+         0.186  fb<1>.G4
+
+fb<2>
+   fb<2>.Y
+         1.038  _n0066<2>.F4
+         1.308  ff<2>15/O.F1
+
+fb<3>
+   fb<6>.Y
+         1.766  _n0066<2>.G2
+         1.717  ff<3>16/O.F2
+
+fb<4>
+   fb<7>.Y
+         1.869  _n0066<4>.F2
+         1.649  ff<4>16/O.F4
+
+fb<5>
+   fb<5>.X
+         1.052  _n0066<4>.G3
+         0.186  fb<5>.G4
+
+fb<6>
+   fb<6>.X
+         1.648  _n0066<6>.F2
+         1.873  ff<6>16/O.F1
+
+fb<7>
+   fb<7>.X
+         1.763  _n0066<6>.G4
+         1.824  ff<7>16/O.F3
+
+ff<0>
+   ff<0>.X
+         1.387  db_0_iobuf.G3
+         0.186  ff<0>.G4
+
+ff<1>
+   ff<1>.Y
+         1.424  db_1_iobuf.G3
+
+ff<2>
+   ff<2>15/O.Y
+         1.416  db_2_iobuf.G3
+         0.841  ff<5>.G1
+
+ff<2>15/O
+   ff<2>15/O.X
+         0.186  ff<2>15/O.G4
+
+ff<3>
+   ff<3>16/O.Y
+         1.860  db_3_iobuf.G2
+         0.919  ff<5>.G2
+
+ff<3>16/O
+   ff<3>16/O.X
+         0.186  ff<3>16/O.G4
+
+ff<4>
+   ff<4>16/O.Y
+         1.696  db_4_iobuf.G2
+         0.394  ff<5>.G3
+
+ff<4>16/O
+   ff<4>16/O.X
+         0.186  ff<4>16/O.G4
+
+ff<5>
+   ff<5>.X
+         1.443  db_5_iobuf.G2
+         0.186  ff<5>.G4
+
+ff<6>
+   ff<6>16/O.Y
+         1.738  db_6_iobuf.G1
+
+ff<6>16/O
+   ff<6>16/O.X
+         0.706  zy.F4
+         0.186  ff<6>16/O.G4
+
+ff<7>
+   ff<7>16/O.Y
+         1.878  db_7_iobuf.G4
+         0.597  zy.F3
+
+ff<7>16/O
+   ff<7>16/O.X
+         0.186  ff<7>16/O.G4
+
+ff<8>
+   cy.X
+         0.364  zy.G1
+         0.185  cy.G4
+
+ior_obuf
+   mwr_obuf.Y
+         1.997  ior.O
+
+iow_obuf
+   n12932.Y
+         3.009  iow.O
+
+ir<0>
+   ir<1>.YQ
+         1.515  mmux_ci<16>__net41.G3
+         2.458  _n0218<26>.F2
+         2.477  _n0218<26>.G2
+         2.330  mmux_rout__net174.F3
+         2.749  mmux_rout__net174.G1
+         2.629  _n0218<27>.F1
+         2.611  _n0218<27>.G1
+         2.432  _n0218<31>.F3
+         2.459  _n0218<31>.G3
+         2.678  mmux_rout__net181.F4
+         2.717  mmux_rout__net181.G4
+         1.103  mmux_rout__net153.F4
+         1.235  mmux_rout__net153.G1
+         2.798  _n0218<28>.F2
+         2.896  _n0218<28>.G1
+         1.031  _n0218<24>.F4
+         1.396  _n0218<24>.G1
+         2.843  mmux_rout__net188.F4
+         2.528  mmux_rout__net188.G3
+         1.073  mmux_rout__net160.F3
+         1.253  mmux_rout__net160.G3
+         3.079  _n0218<29>.F1
+         3.061  _n0218<29>.G1
+         1.240  _n0218<25>.F3
+         1.119  _n0218<25>.G3
+         2.853  mmux_rout__net195.F2
+         2.386  mmux_rout__net195.G4
+         2.645  mmux_rout__net167.F1
+         2.707  mmux_rout__net167.G2
+         2.741  _n0218<30>.F2
+         2.398  _n0218<30>.G3
+         2.351  mmux_rout__net202.F4
+         2.445  mmux_rout__net202.G4
+         2.602  r0<7>.F1
+         2.360  r1<7>.F3
+         2.102  r2<7>.F3
+         1.752  r3<7>.F3
+         2.693  r4<7>.F2
+         2.360  r5<7>.F3
+         2.407  r6<7>.F2
+         1.944  r7<7>.F1
+
+ir<1>
+   ir<1>.XQ
+         0.748  mmux_ci<17>__net48.G2
+         2.241  _n0218<26>.BX
+         3.278  mmux_rout__net174.BX
+         2.307  _n0218<27>.BX
+         2.177  _n0218<31>.BX
+         2.637  mmux_rout__net181.BX
+         1.026  mmux_rout__net153.BX
+         3.166  _n0218<28>.BX
+         1.669  _n0218<24>.BX
+         2.996  mmux_rout__net188.BX
+         1.015  mmux_rout__net160.BX
+         3.243  _n0218<29>.BX
+         0.987  _n0218<25>.BX
+         3.179  mmux_rout__net195.BX
+         2.334  mmux_rout__net167.BX
+         3.128  _n0218<30>.BX
+         2.136  mmux_rout__net202.BX
+         1.924  r0<7>.F2
+         2.681  r1<7>.F1
+         2.308  r2<7>.F1
+         1.698  r3<7>.F4
+         2.380  r4<7>.F4
+         3.143  r5<7>.F1
+         2.111  r6<7>.F3
+         2.428  r7<7>.F3
+
+ir<2>
+   ir<3>.YQ
+         1.123  mmux_ci<18>__net55.G1
+         1.723  _n0218<26>.BY
+         1.792  _n0218<27>.BY
+         1.004  _n0218<31>.BY
+         1.811  _n0218<28>.BY
+         1.720  _n0218<24>.BY
+         1.730  _n0218<29>.BY
+         1.724  _n0218<25>.BY
+         1.730  _n0218<30>.BY
+         1.888  r0<7>.F4
+         1.764  r1<7>.F4
+         1.457  r2<7>.F4
+         1.191  r3<7>.F1
+         1.678  r4<7>.F3
+         1.517  r5<7>.F2
+         1.693  r6<7>.F1
+         1.015  r7<7>.F4
+
+ir<3>
+   ir<3>.XQ
+         0.950  mmux_ci<19>__net62.G4
+         2.280  mpc<2>.G3
+
+ir<4>
+   ir<5>.YQ
+         0.830  mmux_ci<20>__net69.G3
+         2.173  mpc<4>.F2
+
+ir<5>
+   ir<5>.XQ
+         0.792  mmux_ci<21>__net76.G4
+         2.181  mpc<4>.G4
+
+ir<6>
+   ir<7>.YQ
+         1.339  mmux_ci<22>__net83.G1
+         2.118  mpc<6>.F1
+
+ir<7>
+   ir<7>.XQ
+         1.126  mmux_ci<23>__net90.G4
+         2.100  mpc<6>.G2
+
+krix_ibuf
+   krix.I
+         3.553  pcadd_0.F2
+         3.593  _n0215<1>.G2
+         3.520  choice170.G4
+
+maddsub__n0066_inst_cy_17
+   _n0066<0>.COUT
+         0.000  _n0066<2>.CIN
+
+maddsub__n0066_inst_cy_19
+   _n0066<2>.COUT
+         0.000  _n0066<4>.CIN
+
+maddsub__n0066_inst_cy_21
+   _n0066<4>.COUT
+         0.000  _n0066<6>.CIN
+
+maddsub__n0066_inst_cy_23
+   _n0066<6>.COUT
+         0.000  _n0066<8>.CIN
+
+maddsub__n0066_inst_lut3_8
+   maddsub__n0066_inst_lut3_8.X
+         1.128  _n0066<0>.BX
+         0.706  _n0066<0>.F4
+         1.098  _n0066<0>.G4
+         0.422  _n0066<2>.F3
+         0.449  _n0066<2>.G3
+         1.209  _n0066<4>.F3
+         1.296  _n0066<4>.G2
+         0.953  _n0066<6>.F3
+         1.326  _n0066<6>.G3
+         0.186  maddsub__n0066_inst_lut3_8.G4
+
+maddsub__n0074_inst_cy_1
+   _n0074<1>.COUT
+         0.000  _n0074<2>.CIN
+
+maddsub__n0074_inst_cy_11
+   _n0074<10>.COUT
+         0.000  _n0074<12>.CIN
+
+maddsub__n0074_inst_cy_13
+   _n0074<12>.COUT
+         0.000  _n0074<14>.CIN
+
+maddsub__n0074_inst_cy_3
+   _n0074<2>.COUT
+         0.000  _n0074<4>.CIN
+
+maddsub__n0074_inst_cy_5
+   _n0074<4>.COUT
+         0.000  _n0074<6>.CIN
+
+maddsub__n0074_inst_cy_7
+   _n0074<6>.COUT
+         0.000  _n0074<8>.CIN
+
+maddsub__n0074_inst_cy_9
+   _n0074<8>.COUT
+         0.000  _n0074<10>.CIN
+
+mclk_1
+   mclk_1.YQ
+         1.786  zy.CLK
+         3.479  sp<11>.CLK
+         3.437  sp<13>.CLK
+         3.468  sp<15>.CLK
+         3.880  r1<6>.CLK
+         3.342  r2<1>.CLK
+         3.365  r1<5>.CLK
+         3.936  r2<3>.CLK
+         2.889  r1<7>.CLK
+         2.962  r3<1>.CLK
+         3.881  r2<5>.CLK
+         3.121  r3<3>.CLK
+         3.911  r3<6>.CLK
+         3.519  r2<7>.CLK
+         3.342  r4<1>.CLK
+         3.121  r3<5>.CLK
+         3.462  r4<3>.CLK
+         2.806  r3<7>.CLK
+         2.499  r5<1>.CLK
+         3.409  r4<5>.CLK
+         3.114  r5<3>.CLK
+         3.381  r5<6>.CLK
+         3.813  r4<7>.CLK
+         3.928  r6<1>.CLK
+         3.121  r5<5>.CLK
+         3.585  r6<3>.CLK
+         3.121  r5<7>.CLK
+         2.257  r7<1>.CLK
+         3.859  r6<5>.CLK
+         2.989  r7<3>.CLK
+         3.523  r7<6>.CLK
+         3.807  r6<7>.CLK
+         2.620  r7<5>.CLK
+         2.989  r7<7>.CLK
+         3.135  sp<1>.CLK
+         3.188  sp<3>.CLK
+         3.219  sp<5>.CLK
+         3.244  sp<7>.CLK
+         3.479  sp<9>.CLK
+         2.433  tmp<1>.CLK
+         3.690  tmp<3>.CLK
+         3.230  tmp<5>.CLK
+         3.230  tmp<7>.CLK
+
+mclk_obuf
+   mclk_obuf.YQ
+         3.873  mclk.O
+         2.722  run.CLK
+         2.742  pc<10>.CLK
+         4.014  pc<11>.CLK
+         3.963  pc<13>.CLK
+         4.231  pc<15>.CLK
+         3.429  pc_17.CLK
+         4.102  pc_19.CLK
+         4.188  pc_21.CLK
+         4.235  pc_23.CLK
+         4.484  pc_25.CLK
+         4.600  pc_25.G1
+         3.234  cy.CLK
+         3.921  r0<1>.CLK
+         4.455  r0<3>.CLK
+         3.107  r1<1>.CLK
+         4.001  r0<5>.CLK
+         4.082  r1<2>.CLK
+         3.840  r0<6>.CLK
+         3.602  r0<7>.CLK
+         3.140  a<1>.CLK
+         4.102  a<3>.CLK
+         3.896  a<5>.CLK
+         3.896  a<7>.CLK
+         3.866  n12932.G1
+         3.466  act<1>.CLK
+         3.084  act<3>.CLK
+         3.287  act<5>.CLK
+         3.243  act<7>.CLK
+         3.429  adrh<1>.CLK
+         3.615  mpck.F2
+         3.634  mpck.G2
+         4.566  adrh<3>.CLK
+         3.624  adrh<5>.CLK
+         3.871  adrh<7>.CLK
+         3.495  adrl<1>.CLK
+         3.912  adrl<3>.CLK
+         3.369  adrl<5>.CLK
+         3.421  adrl<7>.CLK
+         3.287  ir<1>.CLK
+         3.316  ir<3>.CLK
+         3.181  ir<5>.CLK
+         3.316  ir<7>.CLK
+         3.254  mclk_1.BY
+         1.949  mwr_obuf.F2
+         1.880  mwr_obuf.G4
+         3.219  mclk_obuf.BY
+         3.540  cya.CLK
+
+mclr
+   run.IQ
+         2.370  mpc<0>.SR
+         2.458  mpc<2>.SR
+         2.506  mpc<4>.SR
+         2.889  mpc<6>.SR
+         3.066  mpc<8>.SR
+
+mick
+   mpck.Y
+         2.329  co<10>.CLK
+         2.874  co<11>.CLK
+         2.874  co<12>.CLK
+         2.935  co<20>.CLK
+         2.804  co<13>.CLK
+         2.935  co<21>.CLK
+         2.767  co<14>.CLK
+         2.895  co<22>.CLK
+         2.873  co<15>.CLK
+         1.518  co<23>.CLK
+         2.873  co<16>.CLK
+         1.919  co<24>.CLK
+         1.940  co<17>.CLK
+         1.919  co<25>.CLK
+         1.940  co<18>.CLK
+         1.825  co<26>.CLK
+         2.776  co<19>.CLK
+         2.194  co<27>.CLK
+         2.194  co<28>.CLK
+         2.194  co<29>.CLK
+         3.250  db<0>.CLK
+         3.250  db<1>.CLK
+         3.250  db<2>.CLK
+         3.236  db<3>.CLK
+         3.565  db<4>.CLK
+         3.351  db<5>.CLK
+         3.042  db<6>.CLK
+         3.019  db<7>.CLK
+         1.919  co<0>.CLK
+         1.872  co<1>.CLK
+         1.872  co<2>.CLK
+         1.919  co<3>.CLK
+         1.919  co<4>.CLK
+         1.919  co<5>.CLK
+         1.810  co<6>.CLK
+         1.857  co<7>.CLK
+         1.857  co<8>.CLK
+         2.722  co<9>.CLK
+
+mir<0>
+   co<0>.IQ
+         2.772  r0<1>.CE
+         2.901  r0<3>.CE
+         3.432  r1<1>.CE
+         3.693  r0<5>.CE
+         3.393  r1<2>.CE
+         3.492  r0<6>.CE
+         4.004  r1<6>.CE
+         4.459  r0<7>.CE
+         3.518  r2<1>.CE
+         3.393  r1<5>.CE
+         4.259  r2<3>.CE
+         3.974  r1<7>.CE
+         3.551  r3<1>.CE
+         3.899  r2<5>.CE
+         3.974  r3<3>.CE
+         4.323  r3<6>.CE
+         4.135  r2<7>.CE
+         3.518  r4<1>.CE
+         3.978  r3<5>.CE
+         3.243  r4<3>.CE
+         3.503  r3<7>.CE
+         3.503  r5<1>.CE
+         3.322  r4<5>.CE
+         4.004  r5<3>.CE
+         4.117  r5<6>.CE
+         4.313  r4<7>.CE
+         3.826  r6<1>.CE
+         3.973  r5<5>.CE
+         4.137  r6<3>.CE
+         3.973  r5<7>.CE
+         3.404  r7<1>.CE
+         4.358  r6<5>.CE
+         3.712  r7<3>.CE
+         4.323  r7<6>.CE
+         4.135  r6<7>.CE
+         3.431  r7<5>.CE
+         3.712  r7<7>.CE
+
+mir<10>
+   co<10>.IQ
+         4.083  db_0_iobuf.BX
+         5.178  db_1_iobuf.BX
+         5.254  db_2_iobuf.BX
+         5.478  db_3_iobuf.BX
+         4.326  db_4_iobuf.BX
+         4.619  db_5_iobuf.BX
+         4.302  db_6_iobuf.BX
+         4.236  db_7_iobuf.BX
+
+mir<11>
+   co<11>.IQ
+         4.289  db_0_iobuf.F1
+         4.271  db_0_iobuf.G1
+         4.725  db_1_iobuf.F1
+         4.707  db_1_iobuf.G1
+         4.978  db_2_iobuf.F3
+         4.819  db_2_iobuf.G1
+         5.735  db_3_iobuf.F2
+         4.847  db_3_iobuf.G3
+         4.913  db_4_iobuf.F4
+         5.142  db_4_iobuf.G1
+         4.953  db_5_iobuf.F2
+         5.009  db_5_iobuf.G1
+         4.802  db_6_iobuf.F1
+         4.821  db_6_iobuf.G3
+         5.000  db_7_iobuf.F1
+         4.982  db_7_iobuf.G1
+
+mir<12>
+   co<12>.IQ
+         1.639  zy.CE
+
+mir<13>
+   co<13>.IQ
+         1.340  cy.CE
+
+mir<14>
+   co<14>.IQ
+         1.864  cy.G1
+         1.913  ci_14_obuf.G3
+
+mir<15>
+   co<15>.IQ
+         1.850  _n0066<8>.F4
+         1.889  _n0066<8>.G4
+         1.540  cy.F3
+         1.404  maddsub__n0066_inst_lut3_8.F4
+         1.625  maddsub__n0066_inst_lut3_8.G1
+         1.578  _n0063.F1
+         1.497  _n0063.G1
+         2.245  ci_15_obuf.G1
+         2.086  choice289.F1
+         1.894  choice289.G4
+         1.497  choice281.F3
+         1.696  choice281.G1
+         1.434  choice325.F4
+         1.601  choice325.G2
+         2.244  choice316.F2
+         2.258  choice316.G2
+
+mir<16>
+   co<16>.IQ
+         2.108  _n0066<8>.F1
+         1.981  _n0066<8>.G1
+         1.541  cy.F2
+         1.669  maddsub__n0066_inst_lut3_8.F3
+         1.696  maddsub__n0066_inst_lut3_8.G3
+         1.538  _n0063.F2
+         1.557  _n0063.G2
+         1.763  choice289.F4
+         2.124  choice289.G3
+         1.785  choice281.F4
+         1.874  choice281.G2
+         1.598  choice325.F1
+         1.786  choice325.G1
+         2.181  choice316.F1
+         2.083  choice316.G3
+         1.945  ci_14_obuf.F1
+
+mir<17>
+   co<17>.IQ
+         1.750  _n0066<8>.F3
+         1.777  _n0066<8>.G3
+         1.694  cy.F1
+         1.777  maddsub__n0066_inst_lut3_8.F2
+         2.061  maddsub__n0066_inst_lut3_8.G2
+         1.482  _n0063.F3
+         1.495  _n0063.G4
+         1.521  ci_15_obuf.F4
+         1.978  choice289.F3
+         2.078  choice289.G1
+         2.132  choice281.F2
+         1.937  choice281.G3
+         1.572  choice325.F3
+         1.694  choice325.G4
+         1.990  choice316.F3
+         2.061  choice316.G1
+
+mir<18>
+   co<18>.IQ
+         1.475  fb<0>.F2
+         1.095  fb<1>.F2
+         1.699  fb<5>.F4
+         1.847  fb<7>.F3
+         2.829  fb<7>.G4
+         1.699  fb<6>.F2
+         1.718  fb<6>.G2
+         1.573  fb<2>.G2
+
+mir<19>
+   co<19>.IQ
+         0.884  pcadd_0.F1
+         0.707  pcadd_0.G3
+         0.654  pcadd__n0001.G3
+
+mir<1>
+   co<1>.IQ
+         1.711  a_n839.G1
+
+mir<20>
+   co<20>.IQ
+         0.838  pcadd_0.BX
+         0.929  pcadd__n0001.G2
+
+mir<21>
+   co<21>.IQ
+         0.773  pcadd_0.F3
+         1.101  pcadd_0.G1
+         0.687  pcadd__n0001.G4
+
+mir<22>
+   co<22>.IQ
+         1.137  ci_11_obuf.F4
+         1.448  ci_11_obuf.G1
+         1.472  choice170.F2
+
+mir<23>
+   co<23>.IQ
+         3.079  _n0074<1>.G4
+         3.261  _n0074<2>.F4
+         3.300  _n0074<2>.G4
+         3.794  _n0074<4>.F3
+         3.230  _n0074<4>.G4
+         3.763  _n0074<6>.F2
+         3.275  _n0074<6>.G4
+         3.735  _n0074<8>.F3
+         3.762  _n0074<8>.G3
+         3.800  _n0074<10>.F3
+         3.848  _n0074<10>.G4
+         3.637  _n0074<12>.F4
+         3.676  _n0074<12>.G4
+         3.821  _n0074<14>.F4
+         3.860  _n0074<14>.G4
+         3.873  sp<11>.F1
+         3.850  sp<11>.G2
+         4.048  sp<13>.F1
+         4.030  sp<13>.G1
+         4.057  sp<15>.F1
+         3.917  sp<15>.G2
+         3.276  sp<1>.F1
+         3.258  sp<1>.G1
+         3.497  sp<3>.F1
+         3.367  sp<3>.G2
+         3.760  sp<5>.F3
+         3.680  sp<5>.G4
+         3.630  sp<7>.F3
+         3.657  sp<7>.G3
+         4.045  sp<9>.F1
+         4.027  sp<9>.G1
+
+mir<24>
+   co<24>.IQ
+         3.172  _n0074<1>.G2
+         3.089  _n0074<2>.F2
+         3.108  _n0074<2>.G2
+         2.873  _n0074<4>.F4
+         3.206  _n0074<4>.G2
+         3.306  _n0074<6>.F4
+         3.615  _n0074<6>.G2
+         3.287  _n0074<8>.F4
+         3.714  _n0074<8>.G2
+         3.657  _n0074<10>.F4
+         2.941  _n0074<10>.G3
+         3.148  _n0074<12>.F2
+         3.108  _n0074<12>.G3
+         3.152  _n0074<14>.F2
+         3.171  _n0074<14>.G2
+         2.968  sp<11>.F2
+         2.829  sp<11>.G4
+         3.084  sp<13>.F3
+         2.963  sp<13>.G4
+         2.764  sp<15>.F4
+         2.803  sp<15>.G4
+         3.020  sp<1>.F3
+         3.047  sp<1>.G3
+         2.956  sp<3>.F3
+         2.983  sp<3>.G3
+         2.732  sp<5>.F4
+         2.983  sp<5>.G2
+         3.172  sp<7>.F4
+         2.917  sp<7>.G2
+         3.047  sp<9>.F2
+         3.066  sp<9>.G2
+
+mir<25>
+   co<25>.IQ
+         3.993  ab_10_0.F3
+         4.518  ab_10_0.G1
+         4.429  ab_11_0.F2
+         4.704  ab_11_0.G1
+         4.736  ab_12_0.F2
+         4.755  ab_12_0.G2
+         4.300  ab_13_0.F4
+         4.691  ab_13_0.G2
+         4.282  ab_14_0.F4
+         4.580  ab_14_0.G2
+         4.322  ab_15_0.F1
+         4.635  ab_15_0.G2
+         2.784  ab_0_0.F4
+         3.055  ab_0_0.G2
+         3.472  ab_1_0.F4
+         3.733  ab_1_0.G2
+         3.186  ab_2_0.F1
+         3.168  ab_2_0.G1
+         3.343  ab_3_0.F2
+         3.670  ab_3_0.G1
+         3.606  ab_4_0.F2
+         3.852  ab_4_0.G1
+         4.282  ab_5_0.F1
+         4.264  ab_5_0.G1
+         3.615  ab_6_0.F3
+         3.813  ab_6_0.G3
+         4.243  ab_7_0.F2
+         4.214  ab_7_0.G1
+         3.945  ab_8_0.F2
+         3.732  ab_8_0.G2
+         4.110  ab_9_0.F3
+         4.278  ab_9_0.G2
+         1.057  ab_10__n0001.G1
+
+mir<26>
+   co<26>.IQ
+         4.162  ab_10_0.F1
+         4.168  ab_10_0.G2
+         3.795  ab_11_0.F3
+         3.822  ab_11_0.G3
+         3.845  ab_12_0.F3
+         3.936  ab_12_0.G1
+         3.912  ab_13_0.F3
+         3.977  ab_13_0.G3
+         3.925  ab_14_0.F2
+         4.117  ab_14_0.G1
+         3.928  ab_15_0.F2
+         4.058  ab_15_0.G1
+         2.453  ab_0_0.F2
+         2.165  ab_0_0.G3
+         3.147  ab_1_0.F2
+         2.738  ab_1_0.G1
+         3.051  ab_2_0.F3
+         2.540  ab_2_0.G2
+         2.993  ab_3_0.F1
+         3.207  ab_3_0.G2
+         2.660  ab_4_0.F4
+         2.936  ab_4_0.G3
+         2.865  ab_5_0.F4
+         3.523  ab_5_0.G2
+         3.627  ab_6_0.F1
+         3.036  ab_6_0.G2
+         3.104  ab_7_0.F3
+         3.656  ab_7_0.G2
+         2.941  ab_8_0.F3
+         3.307  ab_8_0.G1
+         3.056  ab_9_0.F4
+         3.398  ab_9_0.G3
+         0.540  ab_10__n0001.G3
+
+mir<27>
+   co<27>.IQ
+         2.653  _n0215<1>.F3
+         3.007  mpc<0>.BX
+         2.915  mpc<0>.F4
+         2.754  mpc<0>.G4
+         2.925  mpc<2>.F2
+         2.891  mpc<2>.G2
+         2.948  mpc<4>.F4
+         2.945  mpc<4>.G2
+         2.750  mpc<6>.F3
+         2.756  mpc<6>.G4
+         2.874  mpc<8>.F1
+         2.685  mpc<8>.G3
+
+mir<28>
+   co<28>.IQ
+         2.976  pc_25.G2
+         2.174  mwr_obuf.G1
+
+mir<29>
+   co<29>.IQ
+         2.303  n12932.F1
+         2.332  mwr_obuf.F1
+
+mir<2>
+   co<2>.IQ
+         3.091  a<1>.F3
+         3.118  a<1>.G3
+         3.465  a<3>.F2
+         3.280  a<3>.G3
+         2.972  a<5>.F3
+         3.076  a<5>.G4
+         3.112  a<7>.F2
+         3.222  a<7>.G1
+         2.564  a_n839.G3
+         2.736  cya.CE
+
+mir<3>
+   co<3>.IQ
+         2.947  act<1>.CE
+         3.012  act<3>.CE
+         3.060  act<5>.CE
+         3.102  act<7>.CE
+
+mir<4>
+   co<4>.IQ
+         3.497  tmp<1>.CE
+         3.429  tmp<3>.CE
+         3.398  tmp<5>.CE
+         3.398  tmp<7>.CE
+
+mir<5>
+   co<5>.IQ
+         2.399  choice170.G3
+         3.158  ir<1>.CE
+         3.308  ir<3>.CE
+         3.674  ir<5>.CE
+         3.308  ir<7>.CE
+
+mir<6>
+   co<6>.IQ
+         3.067  adrh<1>.CE
+         3.264  adrh<3>.CE
+         3.625  adrh<5>.CE
+         3.882  adrh<7>.CE
+
+mir<7>
+   co<7>.IQ
+         3.563  adrh<1>.SR
+         3.164  adrh<3>.SR
+         3.119  adrh<5>.SR
+         3.228  adrh<7>.SR
+
+mir<8>
+   co<8>.IQ
+         3.742  adrl<1>.CE
+         3.582  adrl<3>.CE
+         4.224  adrl<5>.CE
+         4.216  adrl<7>.CE
+
+mir<9>
+   co<9>.IQ
+         2.739  _n0215<1>.G4
+
+mmux_ci<16>__net41
+   mmux_ci<16>__net41.F5
+         0.000  ci_16_obuf.F5IN
+
+mmux_ci<17>__net48
+   mmux_ci<17>__net48.F5
+         0.000  ci_17_obuf.F5IN
+
+mmux_ci<18>__net55
+   mmux_ci<18>__net55.F5
+         0.000  ci_18_obuf.F5IN
+
+mmux_ci<19>__net62
+   mmux_ci<19>__net62.F5
+         0.000  ci_19_obuf.F5IN
+
+mmux_ci<20>__net69
+   mmux_ci<20>__net69.F5
+         0.000  ci_20_obuf.F5IN
+
+mmux_ci<21>__net76
+   mmux_ci<21>__net76.F5
+         0.000  ci_21_obuf.F5IN
+
+mmux_ci<22>__net83
+   mmux_ci<22>__net83.F5
+         0.000  ci_22_obuf.F5IN
+
+mmux_ci<23>__net90
+   mmux_ci<23>__net90.F5
+         0.000  ci_23_obuf.F5IN
+
+mmux_ci<24>__net97
+   mmux_ci<24>__net97.F5
+         0.000  ci_24_obuf.F5IN
+
+mmux_ci<25>__net104
+   mmux_ci<25>__net104.F5
+         0.000  ci_25_obuf.F5IN
+
+mmux_ci<26>__net111
+   mmux_ci<26>__net111.F5
+         0.000  ci_26_obuf.F5IN
+
+mmux_ci<27>__net118
+   mmux_ci<27>__net118.F5
+         0.000  ci_27_obuf.F5IN
+
+mmux_ci<28>__net125
+   mmux_ci<28>__net125.F5
+         0.000  ci_28_obuf.F5IN
+
+mmux_ci<29>__net132
+   mmux_ci<29>__net132.F5
+         0.000  ci_29_obuf.F5IN
+
+mmux_ci<30>__net139
+   mmux_ci<30>__net139.F5
+         0.000  ci_30_obuf.F5IN
+
+mmux_ci<31>__net146
+   mmux_ci<31>__net146.F5
+         0.000  ci_31_obuf.F5IN
+
+mmux_rout__net153
+   mmux_rout__net153.F5
+         0.000  _n0218<24>.F5IN
+
+mmux_rout__net160
+   mmux_rout__net160.F5
+         0.000  _n0218<25>.F5IN
+
+mmux_rout__net167
+   mmux_rout__net167.F5
+         0.000  _n0218<26>.F5IN
+
+mmux_rout__net174
+   mmux_rout__net174.F5
+         0.000  _n0218<27>.F5IN
+
+mmux_rout__net181
+   mmux_rout__net181.F5
+         0.000  _n0218<28>.F5IN
+
+mmux_rout__net188
+   mmux_rout__net188.F5
+         0.000  _n0218<29>.F5IN
+
+mmux_rout__net195
+   mmux_rout__net195.F5
+         0.000  _n0218<30>.F5IN
+
+mmux_rout__net202
+   mmux_rout__net202.F5
+         0.000  _n0218<31>.F5IN
+
+mpc<0>
+   mpc<0>.XQ
+         1.539  ci<0>.O
+         0.886  mpc<0>.F2
+
+mpc<1>
+   mpc<0>.YQ
+         1.888  ci<1>.O
+         0.904  mpc<0>.G2
+
+mpc<2>
+   mpc<2>.XQ
+         1.291  ci<2>.O
+         0.734  mpc<2>.F4
+
+mpc<3>
+   mpc<2>.YQ
+         0.929  ci<3>.O
+         0.774  mpc<2>.G4
+
+mpc<4>
+   mpc<4>.XQ
+         1.513  ci<4>.O
+         0.749  mpc<4>.F3
+
+mpc<5>
+   mpc<4>.YQ
+         1.857  ci<5>.O
+         0.788  mpc<4>.G3
+
+mpc<6>
+   mpc<6>.XQ
+         1.982  ci<6>.O
+         0.734  mpc<6>.F4
+
+mpc<7>
+   mpc<6>.YQ
+         1.991  ci<7>.O
+         0.776  mpc<6>.G3
+
+mpc<8>
+   mpc<8>.XQ
+         2.455  ci<8>.O
+         0.749  mpc<8>.F3
+
+mpc<9>
+   mpc<8>.YQ
+         2.686  ci<9>.O
+         0.774  mpc<8>.G4
+
+mpc_inst_cy_27
+   mpc<0>.COUT
+         0.000  mpc<2>.CIN
+
+mpc_inst_cy_29
+   mpc<2>.COUT
+         0.000  mpc<4>.CIN
+
+mpc_inst_cy_31
+   mpc<4>.COUT
+         0.000  mpc<6>.CIN
+
+mpc_inst_cy_33
+   mpc<6>.COUT
+         0.000  mpc<8>.CIN
+
+mpck
+   mpck.X
+         3.000  mpc<0>.CLK
+         3.000  mpc<2>.CLK
+         2.988  mpc<4>.CLK
+         2.957  mpc<6>.CLK
+         2.920  mpc<8>.CLK
+
+mrd_obuf
+   pc_25.Y
+         2.798  mrd.O
+
+mux_0_ibuf
+   mux<0>.I
+         5.286  mmux_ci<20>__net69.F4
+         5.311  mmux_ci<20>__net69.G1
+         5.250  ci_20_obuf.F3
+         5.132  ci_20_obuf.G4
+         4.411  _n0215<1>.BX
+         5.249  _n0213<1>.BX
+         5.896  _n0211<1>.BX
+         6.383  ci_29_obuf.F3
+         6.410  ci_29_obuf.G3
+         5.943  mmux_ci<29>__net132.F1
+         6.535  mmux_ci<29>__net132.G2
+         7.230  mmux_ci<28>__net125.F1
+         6.846  mmux_ci<28>__net125.G3
+         6.994  ci_28_obuf.F4
+         7.033  ci_28_obuf.G4
+         5.501  ci_19_obuf.F4
+         5.214  ci_19_obuf.G3
+         6.153  mmux_ci<27>__net118.F1
+         5.789  mmux_ci<27>__net118.G3
+         5.432  mmux_ci<19>__net62.F1
+         5.387  mmux_ci<19>__net62.G3
+         5.682  ci_27_obuf.F3
+         5.798  ci_27_obuf.G4
+         5.588  _n0209<1>.BX
+         6.359  mmux_ci<26>__net111.F3
+         6.705  mmux_ci<26>__net111.G1
+         5.501  mmux_ci<18>__net55.F2
+         5.373  mmux_ci<18>__net55.G3
+         5.970  ci_26_obuf.F1
+         5.974  ci_26_obuf.G2
+         5.368  ci_18_obuf.F3
+         5.395  ci_18_obuf.G3
+         5.803  mmux_ci<25>__net104.F4
+         5.843  mmux_ci<25>__net104.G3
+         5.569  mmux_ci<17>__net48.F3
+         5.704  mmux_ci<17>__net48.G1
+         5.681  ci_25_obuf.F3
+         5.968  ci_25_obuf.G2
+         5.702  ci_17_obuf.F2
+         5.721  ci_17_obuf.G2
+         5.740  _n0206<1>.BX
+         4.659  mmux_ci<16>__net41.F4
+         4.890  mmux_ci<16>__net41.G1
+         5.970  ci_24_obuf.F3
+         5.997  ci_24_obuf.G3
+         4.672  ci_16_obuf.F4
+         4.711  ci_16_obuf.G4
+         6.103  mmux_ci<24>__net97.F2
+         6.122  mmux_ci<24>__net97.G2
+         5.875  mmux_ci<31>__net146.F2
+         6.430  mmux_ci<31>__net146.G1
+         5.114  mmux_ci<23>__net90.F4
+         5.478  mmux_ci<23>__net90.G2
+         6.212  ci_31_obuf.F4
+         6.553  ci_31_obuf.G1
+         5.291  ci_23_obuf.F3
+         5.332  ci_23_obuf.G1
+         6.268  mmux_ci<30>__net139.F2
+         4.941  mmux_ci<30>__net139.G4
+         4.825  mmux_ci<22>__net83.F4
+         4.864  mmux_ci<22>__net83.G4
+         5.701  ci_30_obuf.F3
+         5.728  ci_30_obuf.G3
+         5.061  ci_22_obuf.F1
+         5.043  ci_22_obuf.G1
+         5.408  mmux_ci<21>__net76.F2
+         5.427  mmux_ci<21>__net76.G2
+         5.199  ci_21_obuf.F4
+         5.302  ci_21_obuf.G3
+         4.816  choice179.F2
+         4.683  choice170.F3
+         4.869  choice170.G2
+
+mux_1_ibuf
+   mux<1>.I
+         4.794  mmux_ci<20>__net69.BX
+         5.100  ci_20_obuf.BX
+         4.335  _n0215<1>.F1
+         4.317  _n0215<1>.G1
+         4.842  _n0213<1>.F4
+         4.881  _n0213<1>.G4
+         5.664  _n0211<1>.F2
+         5.527  _n0211<1>.G2
+         6.246  ci_29_obuf.BX
+         5.539  mmux_ci<29>__net132.BX
+         6.086  mmux_ci<28>__net125.BX
+         5.857  ci_28_obuf.BX
+         5.265  ci_19_obuf.BX
+         6.288  mmux_ci<27>__net118.BX
+         5.186  mmux_ci<19>__net62.BX
+         6.181  ci_27_obuf.BX
+         6.386  _n0209<1>.F4
+         5.762  _n0209<1>.G1
+         6.313  mmux_ci<26>__net111.BX
+         5.265  mmux_ci<18>__net55.BX
+         5.840  ci_26_obuf.BX
+         5.115  ci_18_obuf.BX
+         5.375  mmux_ci<25>__net104.BX
+         5.654  mmux_ci<17>__net48.BX
+         5.634  ci_25_obuf.BX
+         5.827  ci_17_obuf.BX
+         5.566  _n0206<1>.F3
+         5.626  _n0206<1>.G2
+         4.528  mmux_ci<16>__net41.BX
+         5.692  ci_24_obuf.BX
+         4.369  ci_16_obuf.BX
+         5.424  mmux_ci<24>__net97.BX
+         5.741  mmux_ci<31>__net146.BX
+         4.912  mmux_ci<23>__net90.BX
+         5.956  ci_31_obuf.BX
+         4.172  ci_23_obuf.BX
+         5.341  mmux_ci<30>__net139.BX
+         4.539  mmux_ci<22>__net83.BX
+         5.774  ci_30_obuf.BX
+         4.868  ci_22_obuf.BX
+         5.268  mmux_ci<21>__net76.BX
+         5.186  ci_21_obuf.BX
+         4.405  choice179.F1
+         4.528  choice170.F4
+         4.320  choice170.G1
+
+mux_2_ibuf
+   mux<2>.I
+         4.304  ci_20_obuf.BY
+         5.734  ci_29_obuf.BY
+         5.868  ci_28_obuf.BY
+         5.457  ci_19_obuf.BY
+         6.191  ci_27_obuf.BY
+         5.865  ci_26_obuf.BY
+         5.342  ci_18_obuf.BY
+         5.927  ci_25_obuf.BY
+         5.657  ci_17_obuf.BY
+         6.020  ci_24_obuf.BY
+         6.269  ci_16_obuf.BY
+         5.552  ci_31_obuf.BY
+         4.725  ci_23_obuf.BY
+         4.974  ci_30_obuf.BY
+         4.537  ci_22_obuf.BY
+         4.425  ci_21_obuf.BY
+         6.286  choice179.G2
+         6.169  ci_11_obuf.F1
+         6.020  ci_15_obuf.F3
+         6.046  ci_15_obuf.G4
+         6.153  ci_14_obuf.F2
+         5.860  ci_14_obuf.G4
+
+mwr_obuf
+   mwr_obuf.X
+         2.413  mwr.O
+
+n12932
+   n12932.X
+         0.186  n12932.G4
+
+n15042
+   db<7>.I
+         1.760  r0<7>.G2
+         1.882  r1<7>.G3
+         1.557  r2<7>.G3
+         2.122  r3<7>.G3
+         1.757  r4<7>.G2
+         1.875  r5<7>.G2
+         1.638  r6<7>.G1
+         2.079  r7<7>.G2
+         2.175  a<7>.F4
+         1.994  adrh<7>.BX
+         1.897  adrl<7>.BX
+         2.262  tmp<7>.BX
+         2.403  ir<7>.BX
+
+n15044
+   db<6>.I
+         2.762  r0<6>.G1
+         1.847  r1<6>.F2
+         2.548  r3<6>.F4
+         2.310  r3<6>.G2
+         1.656  r5<6>.F4
+         1.695  r5<6>.G4
+         2.546  r7<6>.F2
+         2.556  r7<6>.G3
+         2.785  a<7>.G2
+         2.350  adrh<7>.BY
+         2.651  adrl<7>.BY
+         2.881  tmp<7>.BY
+         2.373  ir<7>.BY
+
+n15046
+   db<5>.I
+         1.592  r0<5>.F1
+         1.122  r1<5>.F3
+         1.743  r2<5>.F3
+         1.367  r3<5>.F2
+         1.606  r4<5>.F2
+         1.297  r5<5>.F4
+         1.596  r6<5>.F2
+         1.518  r7<5>.F3
+         2.156  a<5>.F2
+         2.039  adrh<5>.BX
+         2.389  adrl<5>.BX
+         1.927  tmp<5>.BX
+         1.909  ir<5>.BX
+
+n15048
+   db<4>.I
+         2.010  r0<5>.G2
+         1.572  r1<5>.G1
+         1.793  r2<5>.G1
+         1.277  r3<5>.G4
+         1.428  r4<5>.G2
+         1.627  r5<5>.G2
+         1.698  r6<5>.G4
+         2.047  r7<5>.G1
+         2.084  a<5>.G3
+         2.048  adrh<5>.BY
+         1.938  adrl<5>.BY
+         1.645  tmp<5>.BY
+         1.914  ir<5>.BY
+
+n15050
+   db<3>.I
+         1.624  r0<3>.F1
+         1.778  r1<6>.G1
+         1.610  r2<3>.F1
+         1.528  r3<3>.F4
+         1.401  r4<3>.F3
+         1.599  r5<3>.F1
+         1.493  r6<3>.F3
+         1.478  r7<3>.F4
+         2.453  a<3>.F1
+         2.285  adrh<3>.BX
+         1.894  adrl<3>.BX
+         2.258  tmp<3>.BX
+         1.709  ir<3>.BX
+
+n15052
+   db<2>.I
+         1.568  r0<3>.G4
+         2.059  r1<2>.G1
+         1.652  r2<3>.G1
+         1.851  r3<3>.G2
+         1.259  r4<3>.G1
+         1.753  r5<3>.G1
+         1.351  r6<3>.G2
+         2.090  r7<3>.G4
+         2.002  a<3>.G4
+         1.698  adrh<3>.BY
+         1.971  adrl<3>.BY
+         1.970  tmp<3>.BY
+         1.701  ir<3>.BY
+
+n15054
+   db<1>.I
+         2.247  r0<1>.F2
+         2.153  r1<1>.F2
+         2.089  r2<1>.F4
+         1.953  r3<1>.F4
+         2.008  r4<1>.F3
+         2.078  r5<1>.F2
+         2.061  r6<1>.F1
+         1.945  r7<1>.F3
+         2.417  a<1>.F4
+         2.253  adrh<1>.BX
+         2.760  adrl<1>.BX
+         2.456  tmp<1>.BX
+         2.269  ir<1>.BX
+
+n15056
+   db<0>.I
+         1.855  r0<1>.G4
+         2.616  r1<1>.G2
+         2.146  r2<1>.G1
+         2.363  r3<1>.G1
+         2.078  r4<1>.G3
+         2.452  r5<1>.G3
+         1.689  r6<1>.G4
+         2.235  r7<1>.G4
+         2.515  a<1>.G4
+         2.791  adrh<1>.BY
+         2.632  adrl<1>.BY
+         2.476  tmp<1>.BY
+         2.924  ir<1>.BY
+
+pc<10>
+   pc<10>.YQ
+         0.906  db_0_iobuf.G4
+         1.460  mmux_ci<16>__net41.G2
+         0.958  pc<10>.G2
+         0.546  ab_0_0.F3
+
+pc<11>
+   pc<11>.XQ
+         1.405  db_1_iobuf.G4
+         1.400  mmux_ci<17>__net48.G3
+         0.799  pc<11>.F3
+         0.819  ab_1_0.F3
+
+pc<12>
+   pc<11>.YQ
+         1.496  db_2_iobuf.G2
+         1.800  mmux_ci<18>__net55.G2
+         0.935  pc<11>.G2
+         0.499  ab_2_0.F4
+
+pc<13>
+   pc<13>.XQ
+         1.676  db_3_iobuf.G1
+         1.650  mmux_ci<19>__net62.G1
+         0.773  pc<13>.F4
+         0.933  ab_3_0.F4
+
+pc<14>
+   pc<13>.YQ
+         2.215  mmux_ci<20>__net69.G4
+         2.158  db_4_iobuf.G3
+         0.824  pc<13>.G3
+         0.729  ab_4_0.F1
+
+pc<15>
+   pc<15>.XQ
+         1.498  db_5_iobuf.G3
+         1.686  mmux_ci<21>__net76.G1
+         0.878  pc<15>.F2
+         1.342  ab_5_0.F3
+
+pc_16
+   pc<15>.YQ
+         1.787  db_6_iobuf.G2
+         1.807  mmux_ci<22>__net83.G3
+         0.788  pc<15>.G3
+         1.200  ab_6_0.F4
+
+pc_17
+   pc_17.XQ
+         1.781  db_7_iobuf.G3
+         1.752  mmux_ci<23>__net90.G1
+         0.980  pc_17.F1
+         1.382  ab_7_0.F1
+
+pc_18
+   pc_17.YQ
+         1.842  db_0_iobuf.F2
+         0.904  mmux_ci<24>__net97.G3
+         0.874  pc_17.G3
+         1.209  ab_8_0.F4
+
+pc_19
+   pc_19.XQ
+         1.638  db_1_iobuf.F3
+         1.127  mmux_ci<25>__net104.G2
+         0.852  pc_19.F3
+         1.063  ab_9_0.F1
+
+pc_20
+   pc_19.YQ
+         1.945  db_2_iobuf.F1
+         1.457  mmux_ci<26>__net111.G2
+         0.829  pc_19.G3
+         1.528  ab_10_0.F4
+
+pc_21
+   pc_21.XQ
+         1.583  db_3_iobuf.F3
+         1.445  mmux_ci<27>__net118.G4
+         0.896  pc_21.F4
+         1.051  ab_11_0.F4
+
+pc_22
+   pc_21.YQ
+         1.531  db_4_iobuf.F1
+         1.699  mmux_ci<28>__net125.G2
+         0.941  pc_21.G2
+         1.504  ab_12_0.F4
+
+pc_23
+   pc_23.XQ
+         1.248  mmux_ci<29>__net132.G3
+         1.872  db_5_iobuf.F1
+         0.787  pc_23.F3
+         1.354  ab_13_0.F2
+
+pc_24
+   pc_23.YQ
+         1.292  db_6_iobuf.F2
+         1.441  mmux_ci<30>__net139.G2
+         0.831  pc_23.G3
+         0.837  ab_14_0.F3
+
+pc_25
+   pc_25.XQ
+         1.337  db_7_iobuf.F3
+         1.015  mmux_ci<31>__net146.G4
+         0.835  pc_25.F4
+         0.536  ab_15_0.F4
+
+pc_inst_cy_37
+   pc<10>.COUT
+         0.000  pc<11>.CIN
+
+pc_inst_cy_39
+   pc<11>.COUT
+         0.000  pc<13>.CIN
+
+pc_inst_cy_41
+   pc<13>.COUT
+         0.000  pc<15>.CIN
+
+pc_inst_cy_43
+   pc<15>.COUT
+         0.000  pc_17.CIN
+
+pc_inst_cy_45
+   pc_17.COUT
+         0.000  pc_19.CIN
+
+pc_inst_cy_47
+   pc_19.COUT
+         0.000  pc_21.CIN
+
+pc_inst_cy_49
+   pc_21.COUT
+         0.000  pc_23.CIN
+
+pc_inst_cy_51
+   pc_23.COUT
+         0.000  pc_25.CIN
+
+pcadd_0
+   pcadd_0.XQ
+         1.696  pc<10>.F3
+         1.723  pc<10>.G3
+         1.976  pc<11>.F4
+         2.232  pc<11>.G1
+         2.311  pc<13>.F2
+         2.330  pc<13>.G2
+         2.290  pc<15>.F4
+         2.223  pc<15>.G4
+         2.205  pc_17.F4
+         2.148  pc_17.G4
+         2.433  pc_19.F2
+         2.452  pc_19.G2
+         2.479  pc_21.F2
+         2.459  pc_21.G4
+         2.648  pc_23.F2
+         2.667  pc_23.G2
+         2.641  pc_25.F2
+         1.469  ci_11_obuf.G4
+
+pcadd__n0001
+   pcadd__n0001.Y
+         0.709  pcadd_0.CLK
+
+prix_ibuf
+   prix.I
+         3.236  pcadd_0.G2
+         3.095  _n0215<1>.F4
+         3.433  choice170.F1
+
+r0<0>
+   r0<1>.YQ
+         1.514  mmux_ci<24>__net97.F3
+         1.228  mmux_rout__net153.G4
+         0.941  r0<1>.G2
+
+r0<1>
+   r0<1>.XQ
+         1.605  mmux_ci<25>__net104.F2
+         1.261  mmux_rout__net160.G4
+         0.749  r0<1>.F3
+
+r0<2>
+   r0<3>.YQ
+         1.376  mmux_ci<26>__net111.F2
+         1.198  mmux_rout__net167.G4
+         0.935  r0<3>.G2
+
+r0<3>
+   r0<3>.XQ
+         1.282  mmux_ci<27>__net118.F4
+         1.333  mmux_rout__net174.G4
+         0.799  r0<3>.F3
+
+r0<4>
+   r0<5>.YQ
+         1.248  mmux_ci<28>__net125.F3
+         1.523  mmux_rout__net181.G1
+         0.823  r0<5>.G4
+
+r0<5>
+   r0<5>.XQ
+         1.112  mmux_ci<29>__net132.F2
+         1.609  mmux_rout__net188.G2
+         0.993  r0<5>.F2
+
+r0<6>
+   r0<6>.YQ
+         0.951  mmux_ci<30>__net139.F4
+         1.469  mmux_rout__net195.G2
+         0.812  r0<6>.G4
+
+r0<7>
+   r0<7>.YQ
+         1.162  mmux_ci<31>__net146.F4
+         1.494  mmux_rout__net202.G2
+         0.824  r0<7>.G3
+
+r1<0>
+   r1<1>.YQ
+         1.897  mmux_ci<16>__net41.F1
+         1.294  mmux_rout__net153.G3
+         0.804  r1<1>.G3
+
+r1<1>
+   r1<1>.XQ
+         1.315  mmux_ci<17>__net48.F2
+         1.329  mmux_rout__net160.G2
+         1.033  r1<1>.F1
+
+r1<2>
+   r1<2>.YQ
+         1.751  mmux_ci<18>__net55.F4
+         1.215  mmux_rout__net167.G3
+         0.783  r1<2>.G4
+
+r1<3>
+   r1<6>.YQ
+         1.485  mmux_ci<19>__net62.F2
+         0.818  mmux_rout__net174.G3
+         0.807  r1<6>.G3
+
+r1<4>
+   r1<5>.YQ
+         1.429  mmux_ci<20>__net69.F2
+         1.188  mmux_rout__net181.G3
+         0.806  r1<5>.G3
+
+r1<5>
+   r1<5>.XQ
+         1.041  mmux_rout__net188.G4
+         1.681  mmux_ci<21>__net76.F4
+         0.927  r1<5>.F2
+
+r1<6>
+   r1<6>.XQ
+         0.524  mmux_ci<22>__net83.F3
+         1.073  mmux_rout__net195.G3
+         0.894  r1<6>.F3
+
+r1<7>
+   r1<7>.YQ
+         0.519  mmux_ci<23>__net90.F3
+         0.891  mmux_rout__net202.G3
+         0.958  r1<7>.G2
+
+r2<0>
+   r2<1>.YQ
+         1.868  ci_24_obuf.G4
+         1.080  mmux_rout__net153.F2
+         0.877  r2<1>.G3
+
+r2<1>
+   r2<1>.XQ
+         1.765  ci_25_obuf.G4
+         1.432  mmux_rout__net160.F1
+         0.802  r2<1>.F3
+
+r2<2>
+   r2<3>.YQ
+         1.181  ci_26_obuf.G4
+         0.914  mmux_rout__net167.F3
+         0.851  r2<3>.G3
+
+r2<3>
+   r2<3>.XQ
+         1.377  ci_27_obuf.G3
+         1.320  mmux_rout__net174.F2
+         0.760  r2<3>.F4
+
+r2<4>
+   r2<5>.YQ
+         1.431  ci_28_obuf.G2
+         1.284  mmux_rout__net181.F2
+         0.817  r2<5>.G3
+
+r2<5>
+   r2<5>.XQ
+         1.293  ci_29_obuf.G2
+         1.322  mmux_rout__net188.F3
+         0.706  r2<5>.F4
+
+r2<6>
+   r3<6>.YQ
+         1.338  ci_30_obuf.G1
+         0.735  mmux_rout__net195.F1
+         0.826  r3<6>.G3
+
+r2<7>
+   r2<7>.YQ
+         1.162  ci_31_obuf.G4
+         1.259  mmux_rout__net202.F2
+         0.954  r2<7>.G2
+
+r3<0>
+   r3<1>.YQ
+         1.396  ci_16_obuf.G3
+         1.152  mmux_rout__net153.F1
+         0.826  r3<1>.G3
+
+r3<1>
+   r3<1>.XQ
+         1.255  ci_17_obuf.G3
+         0.959  mmux_rout__net160.F4
+         0.923  r3<1>.F2
+
+r3<2>
+   r3<3>.YQ
+         1.792  ci_18_obuf.G1
+         1.054  mmux_rout__net167.F2
+         0.858  r3<3>.G4
+
+r3<3>
+   r3<3>.XQ
+         1.604  ci_19_obuf.G4
+         0.489  mmux_rout__net174.F4
+         0.787  r3<3>.F3
+
+r3<4>
+   r3<5>.YQ
+         1.455  ci_20_obuf.G1
+         0.991  mmux_rout__net181.F3
+         0.804  r3<5>.G3
+
+r3<5>
+   r3<5>.XQ
+         0.965  mmux_rout__net188.F1
+         1.314  ci_21_obuf.G4
+         0.753  r3<5>.F3
+
+r3<6>
+   r3<6>.XQ
+         1.127  ci_22_obuf.G4
+         0.853  mmux_rout__net195.F3
+         0.854  r3<6>.F3
+
+r3<7>
+   r3<7>.YQ
+         0.958  ci_23_obuf.G3
+         1.002  mmux_rout__net202.F1
+         0.936  r3<7>.G2
+
+r4<0>
+   r4<1>.YQ
+         1.765  ci_24_obuf.G2
+         0.927  _n0218<24>.G4
+         0.819  r4<1>.G4
+
+r4<1>
+   r4<1>.XQ
+         1.488  ci_25_obuf.G3
+         1.377  _n0218<25>.G1
+         0.746  r4<1>.F4
+
+r4<2>
+   r4<3>.YQ
+         1.195  ci_26_obuf.G3
+         1.216  _n0218<26>.G3
+         0.935  r4<3>.G2
+
+r4<3>
+   r4<3>.XQ
+         2.137  ci_27_obuf.G2
+         1.341  _n0218<27>.G3
+         0.735  r4<3>.F4
+
+r4<4>
+   r4<5>.YQ
+         1.478  ci_28_obuf.G1
+         1.551  _n0218<28>.G3
+         0.829  r4<5>.G3
+
+r4<5>
+   r4<5>.XQ
+         1.389  ci_29_obuf.G4
+         1.636  _n0218<29>.G3
+         0.772  r4<5>.F4
+
+r4<6>
+   r5<6>.YQ
+         1.278  ci_30_obuf.G4
+         0.944  _n0218<30>.G2
+         0.780  r5<6>.G3
+
+r4<7>
+   r4<7>.YQ
+         1.336  ci_31_obuf.G3
+         1.308  _n0218<31>.G4
+         0.817  r4<7>.G3
+
+r5<0>
+   r5<1>.YQ
+         1.512  ci_16_obuf.G2
+         0.945  _n0218<24>.G2
+         0.815  r5<1>.G4
+
+r5<1>
+   r5<1>.XQ
+         0.970  ci_17_obuf.G4
+         0.911  _n0218<25>.G4
+         0.821  r5<1>.F3
+
+r5<2>
+   r5<3>.YQ
+         1.408  ci_18_obuf.G4
+         1.181  _n0218<26>.G1
+         0.834  r5<3>.G4
+
+r5<3>
+   r5<3>.XQ
+         1.501  ci_19_obuf.G2
+         0.767  _n0218<27>.G4
+         0.940  r5<3>.F2
+
+r5<4>
+   r5<5>.YQ
+         0.967  ci_20_obuf.G3
+         1.337  _n0218<28>.G2
+         0.826  r5<5>.G3
+
+r5<5>
+   r5<5>.XQ
+         0.918  _n0218<29>.G4
+         1.471  ci_21_obuf.G2
+         0.858  r5<5>.F3
+
+r5<6>
+   r5<6>.XQ
+         1.315  ci_22_obuf.G2
+         1.005  _n0218<30>.G1
+         0.970  r5<6>.F1
+
+r5<7>
+   r5<7>.YQ
+         1.162  ci_23_obuf.G2
+         1.362  _n0218<31>.G1
+         0.890  r5<7>.G3
+
+r6<0>
+   r6<1>.YQ
+         1.594  ci_24_obuf.F4
+         1.337  _n0218<24>.F1
+         0.901  r6<1>.G2
+
+r6<1>
+   r6<1>.XQ
+         1.807  ci_25_obuf.F1
+         1.531  _n0218<25>.F2
+         0.764  r6<1>.F4
+
+r6<2>
+   r6<3>.YQ
+         1.330  ci_26_obuf.F2
+         1.153  _n0218<26>.F1
+         0.869  r6<3>.G3
+
+r6<3>
+   r6<3>.XQ
+         1.747  ci_27_obuf.F1
+         1.137  _n0218<27>.F3
+         0.990  r6<3>.F1
+
+r6<4>
+   r6<5>.YQ
+         1.638  ci_28_obuf.F1
+         1.137  _n0218<28>.F3
+         0.812  r6<5>.G3
+
+r6<5>
+   r6<5>.XQ
+         1.332  ci_29_obuf.F1
+         1.431  _n0218<29>.F2
+         0.780  r6<5>.F3
+
+r6<6>
+   r7<6>.YQ
+         1.271  ci_30_obuf.F2
+         1.014  _n0218<30>.F1
+         0.944  r7<6>.G2
+
+r6<7>
+   r6<7>.YQ
+         1.142  ci_31_obuf.F3
+         1.340  _n0218<31>.F2
+         1.051  r6<7>.G2
+
+r7<0>
+   r7<1>.YQ
+         1.652  ci_16_obuf.F1
+         0.656  _n0218<24>.F2
+         0.990  r7<1>.G1
+
+r7<1>
+   r7<1>.XQ
+         1.200  ci_17_obuf.F1
+         0.980  _n0218<25>.F1
+         0.837  r7<1>.F4
+
+r7<2>
+   r7<3>.YQ
+         1.362  ci_18_obuf.F1
+         1.184  _n0218<26>.F3
+         0.898  r7<3>.G3
+
+r7<3>
+   r7<3>.XQ
+         1.190  ci_19_obuf.F1
+         1.315  _n0218<27>.F2
+         0.998  r7<3>.F2
+
+r7<4>
+   r7<5>.YQ
+         0.766  ci_20_obuf.F4
+         1.588  _n0218<28>.F1
+         0.904  r7<5>.G2
+
+r7<5>
+   r7<5>.XQ
+         1.331  _n0218<29>.F4
+         0.798  ci_21_obuf.F3
+         0.797  r7<5>.F4
+
+r7<6>
+   r7<6>.XQ
+         1.164  ci_22_obuf.F4
+         0.810  _n0218<30>.F4
+         0.810  r7<6>.F4
+
+r7<7>
+   r7<7>.YQ
+         0.930  ci_23_obuf.F2
+         0.918  _n0218<31>.F4
+         0.999  r7<7>.G1
+
+reset_ibuf
+   reset.I
+         0.569  run.SR
+         3.590  pc<10>.SR
+         3.656  pc<11>.SR
+         3.863  pc<13>.SR
+         4.215  pc<15>.SR
+         4.281  pc_17.SR
+         4.379  pc_19.SR
+         4.615  pc_21.SR
+         4.422  pc_23.SR
+         4.506  pc_25.SR
+         3.281  _n0087.G2
+
+run_ibuf
+   run.I
+         2.516  _n0087.G1
+
+sp<0>
+   sp<1>.YQ
+         0.735  _n0213<1>.F1
+         0.987  _n0074<1>.F1
+         0.865  sp<1>.G4
+         1.518  ab_0_0.F1
+
+sp<10>
+   sp<11>.YQ
+         1.215  _n0209<1>.F1
+         0.995  _n0074<10>.F1
+         0.814  sp<11>.G3
+         1.383  ab_10_0.F2
+
+sp<11>
+   sp<11>.XQ
+         1.149  _n0206<1>.F4
+         1.046  _n0074<10>.G1
+         0.846  sp<11>.F3
+         1.392  ab_11_0.F1
+
+sp<12>
+   sp<13>.YQ
+         1.750  _n0213<1>.G1
+         1.161  _n0074<12>.F1
+         1.007  sp<13>.G2
+         1.150  ab_12_0.F1
+
+sp<13>
+   sp<13>.XQ
+         1.467  _n0211<1>.G4
+         1.162  _n0074<12>.G1
+         0.923  sp<13>.F2
+         1.274  ab_13_0.F1
+
+sp<14>
+   sp<15>.YQ
+         1.231  _n0209<1>.G3
+         0.987  _n0074<14>.F1
+         0.826  sp<15>.G3
+         1.714  ab_14_0.F1
+
+sp<15>
+   sp<15>.XQ
+         1.269  _n0206<1>.G4
+         1.027  _n0074<14>.G1
+         0.824  sp<15>.F3
+         1.206  ab_15_0.F3
+
+sp<1>
+   sp<1>.XQ
+         1.232  _n0211<1>.F4
+         0.999  _n0074<1>.G1
+         0.848  sp<1>.F4
+         1.592  ab_1_0.F1
+
+sp<2>
+   sp<3>.YQ
+         1.377  _n0209<1>.F2
+         1.027  _n0074<2>.F1
+         0.812  sp<3>.G4
+         1.455  ab_2_0.F2
+
+sp<3>
+   sp<3>.XQ
+         1.311  _n0206<1>.F2
+         1.030  _n0074<2>.G1
+         0.797  sp<3>.F4
+         1.198  ab_3_0.F3
+
+sp<4>
+   sp<5>.YQ
+         1.323  _n0213<1>.G2
+         1.027  _n0074<4>.F1
+         0.826  sp<5>.G3
+         1.314  ab_4_0.F3
+
+sp<5>
+   sp<5>.XQ
+         1.199  _n0211<1>.G1
+         1.027  _n0074<4>.G1
+         1.053  sp<5>.F1
+         1.366  ab_5_0.F2
+
+sp<6>
+   sp<7>.YQ
+         0.949  _n0209<1>.G2
+         1.027  _n0074<6>.F1
+         0.811  sp<7>.G4
+         1.435  ab_6_0.F2
+
+sp<7>
+   sp<7>.XQ
+         1.014  _n0206<1>.G3
+         1.015  _n0074<6>.G1
+         1.017  sp<7>.F1
+         1.374  ab_7_0.F4
+
+sp<8>
+   sp<9>.YQ
+         1.580  _n0213<1>.F2
+         1.027  _n0074<8>.F1
+         0.836  sp<9>.G3
+         1.473  ab_8_0.F1
+
+sp<9>
+   sp<9>.XQ
+         1.432  _n0211<1>.F1
+         1.015  _n0074<8>.G1
+         0.835  sp<9>.F4
+         1.481  ab_9_0.F2
+
+tmp<0>
+   tmp<1>.YQ
+         1.251  ci_24_obuf.F2
+         1.522  fb<0>.F4
+
+tmp<1>
+   tmp<1>.XQ
+         1.062  ci_25_obuf.F4
+         2.053  fb<1>.F3
+
+tmp<2>
+   tmp<3>.YQ
+         1.045  ci_26_obuf.F4
+         1.783  fb<2>.G3
+
+tmp<3>
+   tmp<3>.XQ
+         1.269  ci_27_obuf.F2
+         1.758  fb<6>.G3
+
+tmp<4>
+   tmp<5>.YQ
+         1.745  ci_28_obuf.F2
+         1.454  fb<7>.G3
+
+tmp<5>
+   tmp<5>.XQ
+         1.272  ci_29_obuf.F4
+         2.123  fb<5>.F1
+
+tmp<6>
+   tmp<7>.YQ
+         0.879  ci_30_obuf.F4
+         1.560  fb<6>.F1
+
+tmp<7>
+   tmp<7>.XQ
+         1.296  ci_31_obuf.F1
+         1.559  fb<7>.F1
+
+zy
+   zy.YQ
+         0.879  pcadd_0.F4
+

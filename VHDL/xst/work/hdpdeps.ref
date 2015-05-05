@@ -1,0 +1,5 @@
+V1 3
+FL D:/tmp/VHDL/../8bitCPU.vhd 2010/07/09.12:53:04
+EN work/CPU_8           FL D:/tmp/VHDL/../8bitCPU.vhd PB ieee/STD_LOGIC_1164 \
+      PB ieee/STD_LOGIC_ARITH PB ieee/STD_LOGIC_UNSIGNED
+AR work/CPU_8/CPU_8_BEHAVE FL D:/tmp/VHDL/../8bitCPU.vhd EN work/CPU_8
